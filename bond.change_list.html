@@ -1,0 +1,371 @@
+<?
+include_once("inc_header.html");
+include_once("wrap_header2.html");
+include_once("bond.header2.html");
+?>
+
+
+
+
+
+<!-- ******************************************
+  ◆ LEFT MENU
+  -- ****************************************** -->
+<div class="side">
+
+	<!-- 2차메뉴 -->
+	<div class="menu"><!-- 메뉴가 4개를 초과할때 if_more 클래스 -->
+		<ul>
+			<!-- 해당메뉴 hit 클래스 추가 -->
+			<li class=""><a href="bond.apply_list.html" class="ctg2">채권매입내역조회</a></li>
+			<li class="hit"><a href="bond.change_list.html" class="ctg2">채권변경내역조회</a></li>
+			<li class=""><a href="bond.cancel_list.html" class="ctg2">채권취소내역조회</a></li>
+			<li class=""><a href="bond.repay_list.html" class="ctg2">중도상환내역조회</a></li>
+		</ul>
+	</div>
+	<!-- / 2차메뉴 -->
+
+	<!-- 고객센터 정보 -->
+	<div class="cs_info">
+		<div class="cs_tit"><span class="tx">법무채권 상담센터</span></div>
+		<dl>
+			<dt><strong class="tel_pc">1544-3440</strong><a href="tel:1544-3440" class="tel_mo">1544-3440</a></dt>
+			<dd>FAX : 02-6442-6412</dd>
+			<dd>E-mail : help@bmbond.co.kr</dd>
+			<dd class="open_time">09:30 ~ 18:00 (주말/공휴일 휴무)</dd>
+		</dl>
+	</div>
+	<!-- / 고객센터 정보 -->
+
+</div>
+<!-- / LEFT MENU -->
+
+
+
+
+<div class="section"><!-- ▼ 여기서부터 서브컨텐츠 들어감 -->
+
+
+
+	<!-- ******************************************
+	  ◆ SUB TOP
+	  -- ****************************************** -->
+	<div class="sub_top">
+
+		<!-- 2차 타이틀 -->
+		<div class="page_tit"><strong>채권변경내역조회</strong></div>
+
+		<!-- 페이지 위치 -->
+		<div class="location">
+			<ul>
+				<li class="home"><a href="" class="btn">홈</a><i class="icons arrow-next-10"></i></li>
+				<li><span class="btn">채권조회업무</span><i class="icons arrow-next-10"></i></li>
+				<li><span class="btn">채권변경내역조회</span><i class="icons arrow-next-10"></i></li>
+			</ul>
+		</div>
+		<!-- / 페이지 위치 -->
+
+		<!-- 모바일 메뉴 -->
+		<div class="menu js_menu_stage ">
+			<a href="#none" class="btn_open js_menu_btn" onclick="return false;" ><span class="shape"></span></a>
+			<div class="menu_box">
+				<ul>
+					<!-- 해당메뉴 hit 클래스 추가 -->
+					<li class=""><a href="bond.apply_list.html" class="ctg2">채권매입내역조회</a></li>
+					<li class="hit"><a href="bond.change_list.html" class="ctg2">채권변경내역조회</a></li>
+					<li class=""><a href="bond.cancel_list.html" class="ctg2">채권취소내역조회</a></li>
+					<li class=""><a href="bond.repay_list.html" class="ctg2">중도상환내역조회</a></li>
+				</ul>
+			</div>
+		</div>
+		<script>
+			// 메뉴 열림
+			$(document).on('click','.js_menu_btn',function(){
+				var targetClass = '.js_menu_stage';
+				var addClassName = 'if_open_menu';
+				var chk = $(targetClass).hasClass(addClassName);
+				if( chk == false){ $(targetClass).addClass(addClassName); }
+				else {  $(targetClass).removeClass(addClassName);  }
+			});
+		</script>
+		<!-- / 모바일 메뉴 -->
+
+	</div>
+	<!-- SUB TOP -->
+
+
+
+	<!-- ******************************************
+	  ◆ 채권/인지목록
+	  -- ****************************************** -->
+
+
+	<!-- 폼(공통) -->
+	<div class="c_form if_search"><!-- 검색폼으로 사용할 경우 if_search -->
+
+		<!-- 단락폼 (타이틀+폼) -->
+		<div class="form_box">
+			<!-- 단락타이틀 -->
+			<div class="group_tit">
+				<!-- <dl>
+					<dt>채권등록번호 입력</dt>
+					<dd>※ 다음 정보를 정확하게 입력해주세요.</dd>
+				</dl> -->
+			</div>
+			<!-- 폼테이블 필독 ::
+				 * 중요! 툴팁노출을 위해 "input_box"의 인풋"design"과 "tooltip" 순서변경하지말고 그 사이에 소스 절대없도록
+				 * 필수 선택되면 자동노출됨 (css로 제어)
+				 * 필수요소에 ess (dt/dd 모두적용)
+				 * 반응형 특수 구조로, ul.tr 안에 li.td 가 2개가 연속 될 때 컨텐츠 차이가 나지 않도록 배열할것.
+				 * 반응형을 위한 구조이므로 반드시 지켜주세요.
+			  -->
+			<div class="like_table">
+				<ul class="tr">
+					<li class="td">
+						<dl class="inner">
+							<dt class="ess"><span class="opt">신청일자</span></dt>
+							<dd class="ess">
+								<div class="box_date">
+									<ul class="this_form">
+										<li>
+											<div class="input_box" style="width:130px">
+												<a href="#none" class="btn_date" title="날짜선택"></a>
+												<input type="number" name="" value="2018-05-02" class="design" placeholder="날짜" readonly /><span class="tooltip">필수</span>
+												<!-- 클릭하면 달력으로 선택가능하도록 -->
+											</div>
+										</li>
+										<li class="dash"></li>
+										<li>
+											<div class="input_box" style="width:130px">
+												<a href="#none" class="btn_date" title="날짜선택"></a>
+												<input type="number" name="" value="2018-05-02" class="design" placeholder="날짜" readonly /><span class="tooltip">필수</span>
+												<!-- 클릭하면 달력으로 선택가능하도록 -->
+											</div>
+										</li>
+									</ul>
+									<ul class="this_btn">
+										<li><a href="#none" class="c_btn h35 color light">1주</a></li>
+										<li><a href="#none" class="c_btn h35 color light">1개월</a></li>
+										<li><a href="#none" class="c_btn h35 color light">3개월</a></li>
+										<li><a href="#none" class="c_btn h35 color light">6개월</a></li>
+										<li><a href="#none" class="c_btn h35 color light">1년</a></li>
+									</ul>
+								</div>
+
+							</dd>
+						</dl>
+					</li>
+				</ul>
+				<ul class="tr">
+					<li class="td">
+						<dl class="inner">
+							<dt class="ess"><span class="opt">검색조건</span></dt>
+							<dd class="ess">
+								<div class="box_etc">
+									<ul>
+										<li>
+											<div class="select" style="width:150px">
+												<select name="">
+													<option value="Od_Name">성명(상호)</option>
+													<option value="Od_Jumin">주민번호</option>
+													<option value="code">용도</option>
+												</select>
+												<i class="icons arrow-download-12"></i>
+											</div>
+										</li>
+										<li>
+											<div class="input_box" style="width:200px">
+												<input type="number" name="" value="" class="design" placeholder="검색어" readonly /><span class="tooltip">필수</span>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</dd>
+						</dl>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+
+		<!-- 하단버튼 (공통) -->
+		<div class="c_btn_box">
+			<div class="in">
+				<ul>
+					<li><a href="#none" class="c_btn h40 color orange">검색하기</a></li>
+				</ul>
+			</div>
+		</div>
+
+	</div>
+	<!-- / 폼(공통) -->
+
+
+
+
+
+	<!-- 채권 목록 -->
+	<div class="bond_list">
+		<div class="table">
+			<ul class="thead">
+				<li class="td number">번호</li>
+				<li class="td">요청일시<br/>완료일시</li>
+				<li class="td">성명(상호)</li>
+				<li class="td">주민번호<br/>사업자번호</li>
+				<li class="td">채권번호</li>
+				<li class="td">매입금액</li>
+				<li class="td">용도</li>
+				<li class="td">처리여부</li>
+			</ul>
+			<ul class="tbody"><!-- 행 반복 -->
+				<li class="td number">
+					<div class="tool">번호</div>
+					<div class="form">
+						1
+					</div>
+				</li>
+				<li class="td number">
+					<div class="tool">요청일시<br/>완료일시</div><!-- 반응형을 위한 항목타이틀 -->
+					<div class="form">
+						2018-05-50<br/>
+						2018-06-20
+					</div>
+				</li>
+				<li class="td">
+					<div class="tool">성명(상호)</div>
+					<div class="form">
+						홍길동(법무통)
+					</div>
+				</li>
+				<li class="td">
+					<div class="tool">주민번호<br/>사업자번호</div><!-- 반응형을 위한 항목타이틀 -->
+					<div class="form">
+						800501-1******<br/>
+						123-45-678910
+					</div>
+				</li>
+
+				<li class="td">
+					<div class="tool">채권번호</div><!-- 반응형을 위한 항목타이틀 -->
+					<div class="form">
+						16461642336456
+					</div>
+				</li>
+				<li class="td">
+					<div class="tool">매입금액</div><!-- 반응형을 위한 항목타이틀 -->
+					<div class="form">
+						180,000원
+					</div>
+				</li>
+				<li class="td">
+					<div class="tool">용도</div><!-- 반응형을 위한 항목타이틀 -->
+					<div class="form">
+						용도
+					</div>
+				</li>
+				<li class="td">
+					<div class="tool">처리여부</div><!-- 반응형을 위한 항목타이틀 -->
+					<div class="form">
+						처리여부
+					</div>
+				</li>
+			</ul>
+		</div>
+
+		<!-- 내용없을때 : 게시판 공통 -->
+		<!-- <div class="no_posting">등록된 내용이 없습니다.</div> -->
+	</div>
+	<!-- / 채권 목록 -->
+
+
+
+
+
+
+	<!-- 페이지네이트 (모든게시판 공통) -->
+	<div class="paginate">
+		<!-- PC페이징 -->
+		<div class="inner if_pc">
+
+			<div class="prevnext prev">
+				<!-- 클릭할 페이지가 있으면 ok 클래스추가 -->
+				<a href="#" title="처음페이지" class="btn_first"><span class="icons arrow-rewind-1"></span></a>
+				<a href="#" title="이전페이지" class="btn_prev"><span class="icons arrow-back-7"></span></a>
+			</div>
+
+			<!-- PC : 10페이지까지 표기 -->
+			<ul class="number">
+				<li class="hit"><a href="">1</a></li>
+				<li class=""><a href="">2</a></li>
+				<li class=""><a href="">3</a></li>
+				<li class=""><a href="">4</a></li>
+				<li class=""><a href="">5</a></li>
+				<li class=""><a href="">6</a></li>
+				<li class=""><a href="">7</a></li>
+				<li class=""><a href="">8</a></li>
+				<li class=""><a href="">9</a></li>
+				<li class=""><a href="">10</a></li>
+			</ul>
+
+			<div class="prevnext next">
+				<!-- 클릭할 페이지가 있으면 ok 클래스추가 -->
+				<a href="#" title="다음페이지" class="btn_next ok"><span class="icons arrow-next-10"></span></a>
+				<a href="#" title="마지막페이지" class="btn_last ok"><span class="icons arrow-fast-forward-1"></span></a>
+			</div>
+		</div>
+
+		<!-- 모바일 페이징 -->
+		<div class="inner if_mo">
+			<div class="prevnext prev">
+				<!-- 클릭할 페이지가 있으면 ok 클래스추가 -->
+				<a href="#" title="처음페이지" class="btn_first"><span class="icons arrow-rewind-1"></span></a>
+				<a href="#" title="이전페이지" class="btn_prev"><span class="icons arrow-back-7"></span></a>
+			</div>
+
+			<!-- 모바일 : 5페이지까지 표기 -->
+			<ul class="number">
+				<li class=""><a href="">1</a></li>
+				<li class=""><a href="">2</a></li>
+				<li class="hit"><a href="">3</a></li>
+				<li class=""><a href="">4</a></li>
+				<li class=""><a href="">5</a></li>
+			</ul>
+
+			<div class="prevnext next">
+				<!-- 클릭할 페이지가 있으면 ok 클래스추가 -->
+				<a href="#" title="다음페이지" class="btn_next ok"><span class="icons arrow-next-10"></span></a>
+				<a href="#" title="마지막페이지" class="btn_last ok"><span class="icons arrow-fast-forward-1"></span></a>
+			</div>
+		</div>
+	</div>
+	<!-- / 페이지네이트 -->
+
+
+
+
+
+	<!-- 페이지 도움말(공통) -->
+	<div class="page_tip">
+		<dl>
+			<dt>관련 안내사항</dt>
+			<dd>
+				<ul>
+					<li>관련 안내 사항을 기재해주세요.</li>
+					<li>관련 안내 사항을 기재해주세요.</li>
+				</ul>
+			</dd>
+		</dl>
+	</div>
+	<!-- / 페이지 도움말(공통) -->
+
+
+
+
+
+</div><!-- ▲ 여기까지 서브컨텐츠 들어감 -->
+
+
+<?
+include_once("container.footer.html");
+include_once("wrap_footer.html");
+?>

@@ -1,0 +1,145 @@
+@charset 'utf-8';
+
+/*
+ * Copyright      :    onedaynet / Gobeyond
+ * Solution       :    HYSSENCE 2.0
+ * Directory      :    pages/css/
+ * File           :    ghpf_sub.css
+ * Description    :    Sub page
+ * Language       :    KOREAN
+ *
+ * ***********************************************
+ *
+ * SUMMARY
+ * 01) BUTTON
+ * 02) LAYER POPUP (common)
+ * 03) LAYER POPUP
+ */
+
+
+
+
+
+
+/* **************************************** *
+ * BUTTON
+ * **************************************** */
+.c_btn {float:left; overflow:hidden; white-space:nowrap; box-sizing:border-box; cursor:pointer !important; letter-spacing:-0.05px; text-align:center;}
+.c_btn {border:1px solid #d1d1de !important; color:#91919e !important; border-radius:3px !important; overflow:hidden; letter-spacing:-1px;}
+.c_btn {transition-duration: 0.2s; -webkit-transition-duration: 0.2s; box-shadow:none !important}
+.c_btn input {margin-top:-1px;}
+span.c_btn {padding:0px !important;}
+.c_btn+ .c_btn {margin-left:5px;}
+
+/* 크기 */
+.c_btn.h30 {height:30px; line-height:28px; line-height:25px\0; padding:0 10px; font-size:0.95em;}
+.c_btn.h30 input {padding:0 10px;}
+.c_btn.h35 {height:35px; line-height:33px; line-height:30px\0; padding:0 15px; font-size:1em;}
+.c_btn.h35 input {padding:0 15px;}
+.c_btn.h40 {height:40px; line-height:38px; line-height:35px\0; padding:0 20px; font-size:1em;}
+.c_btn.h40 input {padding:0 20px;}
+.c_btn.h45 {height:45px; line-height:43px; line-height:40px\0; padding:0 25px; font-size:1.05em;}
+.c_btn.h45 input {padding:0 25px;}
+.c_btn.h50 {height:50px; line-height:48px; line-height:45px\0; padding:0 30px; font-size:1.3em; font-weight:600;}
+.c_btn.h50 input {padding:0 30px;}
+
+/* 라인형 */
+.c_btn.line {background:#fff !important;}
+.c_btn.line.light {border-color:#91919e !important; color:#91919e !important;}
+.c_btn.line.dark {border-color:#31313e !important; color:#31313e !important;}
+.c_btn.line.sky {border-color:#42bfec !important; color:#42bfec !important;}
+.c_btn.line.blue {border-color:#3a55a0 !important; color:#3a55a0 !important;}
+.c_btn.line.orange {border-color:#f07037 !important; color:#f07037 !important;}
+.c_btn.line.red {border-color:#d70002 !important; color:#d70002 !important;}
+
+/* bg형 */
+.c_btn.color {background:#f1f4fb !important;}
+.c_btn.color.light {border-color:#91919e !important; background:#91919e !important; color:#fff !important;}
+.c_btn.color.dark {border-color:#31313e !important; background:#31313e !important; color:#fff !important;}
+.c_btn.color.sky {border-color:#42bfec !important; background:#42bfec !important; color:#fff !important;}
+.c_btn.color.blue {border-color:#3a55a0 !important; background:#3a55a0 !important; color:#fff !important;}
+.c_btn.color.orange {border-color:#f07037 !important; background:#f07037 !important; color:#fff !important;}
+.c_btn.color.red {border-color:#d70002 !important; background:#d70002 !important; color:#fff !important;}
+
+/* 버튼묶음 */
+.c_btn_box {overflow:hidden; text-align:center; margin-top:30px;}
+.c_btn_box .in {margin:0 -10px; display:inline-block;}
+.c_btn_box ul {display:table; box-sizing:border-box; table-layout:fixed; border-collapse:separate; border-spacing:10px 0;}
+.c_btn_box li {display:table-cell; vertical-align:top; padding:0px;}
+.c_btn_box.if_fix ul {width:100%;}
+.c_btn_box.if_fix .c_btn {width:100% !important;}
+
+
+
+
+
+
+
+
+
+
+/* **************************************** *
+ * LAYER POPUP (common)
+ * **************************************** */
+.ly_pop_bg {position:fixed; left:0; top:0; width:100%; height:100%; z-index:99999999; background:#000; opacity: 0.7; filter: alpha(opacity=70); -ms-filter:alpha(opacity=70); display:none;}
+.ly_pop {position:fixed; left:0; top:0; z-index:9999999999999999999999999; width:100%; height:100%; display:table; display:none;}
+.ly_pop .inner {display:table-cell; vertical-align:middle; box-sizing:border-box; padding:0 20px; position:relative;}
+.ly_pop .layout_fix {max-width:500px; padding:0px !important;}
+.ly_pop .tit {color:#fff; font-size:1.5em; position:relative; text-align:center; padding:0 20px; background:#42bfec; height:60px; line-height:63px; letter-spacing:-1px;}
+.ly_pop .tit span {overflow:hidden; text-overflow:ellipsis; -webkit-line-clamp: 1; -webkit-box-orient: vertical; display: -webkit-box;}
+.ly_pop .conts {background:#fff; padding:20px; }
+.ly_pop .btn_close {position:absolute; right:0; top:50%; font-size:0.95em; padding:0 20px; color:#fff; box-sizing:border-box; text-align:center; margin-top:-30px; height:60px;}
+.ly_pop .btn_close .icons {height:60px;}
+.ly_pop .pop_guide {overflow:hidden; background:#f5f5f5; line-height:1.4; font-size:0.97em; box-sizing:border-box; display:table; width:100%; box-sizing:border-box;}
+.ly_pop .pop_guide .tx {display:table-cell; vertical-align:middle; background:transparent url('../images/pop_guide.png') 20px center no-repeat; padding:25px 20px; padding-left:70px; min-height:38px;}
+
+.if_open_popup .ly_pop_bg {display:block;}
+.if_open_popup .ly_pop {display:table;}
+
+
+
+/* 내용없을때 */
+.no_posting {text-align:center; color:#a1a1ae; padding-top:70px; background:transparent url('../images/board_no.png') center top no-repeat; text-align:center; margin:50px 0 30px;}
+
+
+
+
+
+
+
+
+
+/* **************************************** *
+ * PAGINATE (common)
+ * **************************************** */
+.paginate {text-align:center; overflow:hidden; position:relative; clear:both; padding-top:50px;}
+.paginate li {list-style:none;}
+.paginate .inner {display:table; box-sizing:border-box; table-layout:fixed; margin:0 auto;}
+.paginate .prevnext,
+.paginate .number {display:table-cell;}
+.paginate a {position:relative; box-sizing:border-box; border:1px solid #d1d1de; line-height:41px; height:40px; width:40px; float:left; background:#fff; overflow:hidden; font-size:1.1em;}
+.paginate .btn_first {border-right:0;}
+.paginate .btn_last {border-left:0;}
+
+/* 이전,다음,처음,끝 버튼 */
+.paginate .prevnext a {cursor:default !important}
+.paginate .prevnext a.ok {cursor:pointer !important}
+.paginate .prevnext a .icons {color:#ccc; height:40px; line-height:33px;}
+
+/* 페이징 넘버 */
+.paginate .number {overflow:hidden; padding:0 25px; position:relative;}
+.paginate .number li {float:left;}
+.paginate .number a {color:#888; margin:0 3px;}
+.paginate .number .hit a {color:#fff !important; border:1px solid #91919e; background:#91919e;}
+.paginate .inner.if_pc {}
+.paginate .inner.if_mo {display:none;}
+.paginate .inner.if_mo .number {padding:0 5px;}
+.paginate .inner.if_mo a {width:35px; height:35px; line-height:33px; margin:0;}
+.paginate .inner.if_mo .number a {border-right:0;}
+.paginate .inner.if_mo .number li:last-of-type a {border-right:1px solid #ddd;}
+.paginate .inner.if_mo .number li:only-of-type a {border:0 !important;}
+.paginate .inner.if_mo .number .hit+ li a {border-left:0;}
+
+
+
+

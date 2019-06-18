@@ -1,0 +1,331 @@
+<?
+include_once("inc_header.html");
+include_once("wrap_header2.html");
+include_once("tax.header.html");
+?>
+
+
+
+
+
+<!-- ******************************************
+  ◆ LEFT MENU
+  -- ****************************************** -->
+<div class="side">
+
+	<!-- 2차메뉴 -->
+	<div class="menu"><!-- 메뉴가 4개를 초과할때 if_more 클래스 -->
+		<ul>
+			<!-- 해당메뉴 hit 클래스 추가 -->
+			<li class="hit"><a href="tax.apply_form.html" class="ctg2">인지매입신청</a></li>
+			<li class=""><a href="tax.cancel_form.html" class="ctg2">인지취소신청</a></li>
+			<li class=""><a href="tax.re_form.html" class="ctg2">인지환매신청</a></li>
+			<li class=""><a href="tax.apply_list.html" class="ctg2">인지매입내역조회</a></li>
+			<li class=""><a href="tax.cancel_list.html" class="ctg2">인지취소내역조회</a></li>
+			<li class=""><a href="tax.re_list.html" class="ctg2">인지환매내역조회</a></li>
+			<li class=""><a href="point.save_list.html" class="ctg2">포인트적립내역</a></li>
+			<li class=""><a href="point.use_list.html" class="ctg2">포인트사용내역</a></li>
+		</ul>
+	</div>
+	<!-- / 2차메뉴 -->
+
+	<!-- 고객센터 정보 -->
+	<div class="cs_info">
+		<div class="cs_tit"><span class="tx">법무채권 상담센터</span></div>
+		<dl>
+			<dt><strong class="tel_pc">1544-3440</strong><a href="tel:1544-3440" class="tel_mo">1544-3440</a></dt>
+			<dd>FAX : 02-6442-6412</dd>
+			<dd>E-mail : help@bmbond.co.kr</dd>
+			<dd class="open_time">09:30 ~ 18:00 (주말/공휴일 휴무)</dd>
+		</dl>
+	</div>
+	<!-- / 고객센터 정보 -->
+
+</div>
+<!-- / LEFT MENU -->
+
+
+
+
+<div class="section"><!-- ▼ 여기서부터 서브컨텐츠 들어감 -->
+
+
+
+	<!-- ******************************************
+	  ◆ SUB TOP
+	  -- ****************************************** -->
+	<div class="sub_top">
+
+		<!-- 2차 타이틀 -->
+		<div class="page_tit"><strong>인지매입신청</strong></div>
+
+		<!-- 페이지 위치 -->
+		<div class="location">
+			<ul>
+				<li class="home"><a href="" class="btn">홈</a><i class="icons arrow-next-10"></i></li>
+				<li><span class="btn">전자수입인지</span><i class="icons arrow-next-10"></i></li>
+				<li><span class="btn">인지매입신청</span><i class="icons arrow-next-10"></i></li>
+			</ul>
+		</div>
+		<!-- / 페이지 위치 -->
+
+		<!-- 모바일 메뉴 -->
+		<div class="menu js_menu_stage ">
+			<a href="#none" class="btn_open js_menu_btn" onclick="return false;" ><span class="shape"></span></a>
+			<div class="menu_box">
+				<ul>
+					<!-- 해당메뉴 hit 클래스 추가 -->
+					<li class="hit"><a href="tax.apply_form.html" class="ctg2">인지매입신청</a></li>
+					<li class=""><a href="tax.cancel_form.html" class="ctg2">인지취소신청</a></li>
+					<li class=""><a href="tax.re_form.html" class="ctg2">인지환매신청</a></li>
+					<li class=""><a href="tax.apply_list.html" class="ctg2">인지매입내역조회</a></li>
+					<li class=""><a href="tax.cancel_list.html" class="ctg2">인지취소내역조회</a></li>
+					<li class=""><a href="tax.re_list.html" class="ctg2">인지환매내역조회</a></li>
+					<li class=""><a href="point.save_list.html" class="ctg2">포인트적립내역</a></li>
+					<li class=""><a href="point.use_list.html" class="ctg2">포인트사용내역</a></li>
+				</ul>
+			</div>
+		</div>
+		<script>
+			// 메뉴 열림
+			$(document).on('click','.js_menu_btn',function(){
+				var targetClass = '.js_menu_stage';
+				var addClassName = 'if_open_menu';
+				var chk = $(targetClass).hasClass(addClassName);
+				if( chk == false){ $(targetClass).addClass(addClassName); }
+				else {  $(targetClass).removeClass(addClassName);  }
+			});
+		</script>
+		<!-- / 모바일 메뉴 -->
+
+	</div>
+	<!-- SUB TOP -->
+
+
+
+	<!-- ******************************************
+	  ◆ 채권/인지목록
+	  -- ****************************************** -->
+
+	<!-- 목록상단 버튼 -->
+	<div class="bond_top">
+		<ul>
+			<li class="left">
+				<span class="lineup">
+					<label class="design"><input type="radio" name="" /><span class="tx"><span class="icon"></span>빠른인지</span></label>
+					<label class="design"><input type="radio" name="" /><span class="tx"><span class="icon"></span>인지</span></label>
+				</span>
+			</li>
+			<li class="right">
+				<span class="lineup">
+					<span class="updown">
+						<input type="tel" name="" value="1" placeholder="" />
+						<a href="" class="btn btn_up" title="증가"><span class="shape"></span></a>
+						<a href="" class="btn btn_down" title="감소"><span class="shape"></span></a>
+					</span>
+					<a href="" class="c_btn h30 color  ">행추가</a>
+					<a href="" class="c_btn h30 color ">동일고객행 추가</a>
+					<a href="" class="c_btn h30 color light ">행삭제</a>
+				</span>
+			</li>
+		</ul>
+	</div>
+	<!-- / 목록상단 버튼 -->
+
+
+
+	<!-- 채권 목록 -->
+
+	<div class="bond_list">
+		<div class="table">
+			<ul class="thead">
+				<li class="td"><label class="design"><input type="checkbox" name="" /><span class="tx"><span class="icon"></span></span></label></li>
+				<li class="td number">번호</li>
+				<li class="td">성명(상호)</li>
+				<li class="td">주민번호<br/>사업자번호(법인등록번호)</li>
+				<li class="td">종류<br/>용도</li>
+				<li class="td">채권금액</li>
+			</ul>
+			<ul class="tbody"><!-- 행 반복 -->
+				<li class="td label">
+					<div class="tool">선택</div><!-- 반응형을 위한 항목타이틀 -->
+					<div class="form"><label class="design"><input type="checkbox" name="" /><span class="tx"><span class="icon"></span></span></label></div>
+				</li>
+				<li class="td number">
+					<div class="tool">번호</div>
+					<div class="form">
+						1
+					</div>
+				</li>
+				<li class="td">
+					<div class="tool">성명(상호)</div><!-- 반응형을 위한 항목타이틀 -->
+					<div class="form">
+						<input type="text" name="" value="" class="design right" placeholder="" style="width:120px" />
+					</div>
+				</li>
+				<li class="td">
+					<div class="tool">주민번호<br/>사업자번호</div><!-- 반응형을 위한 항목타이틀 -->
+					<div class="form">
+						<div class="in_box">
+							<ul>
+								<li><input type="tel" name="" value="" class="design" placeholder="주민번호앞" /></li>
+								<li><input type="password" name="" value="" class="design" placeholder="주민번호뒤" autocomplete="new-password" attribute  /></li>
+							</ul>
+						</div>
+					</div>
+				</li>
+				<li class="td">
+					<div class="tool">종류<br/>용도</div><!-- 반응형을 위한 항목타이틀 -->
+					<div class="form">
+						<div class="select" style="width:130px">
+							<select name="">
+								<option value="0">인지세 납부</option>
+								<option value="0">행정 수수료</option>
+							</select>
+							<i class="icons arrow-download-12"></i>
+						</div>
+					</div>
+				</li>
+				<li class="td">
+					<div class="tool">인지금액</div><!-- 반응형을 위한 항목타이틀 -->
+					<div class="form">
+						<input type="text" name="" value="" class="design right" placeholder="" style="width:120px" />
+					</div>
+				</li>
+			</ul>
+			<ul class="tbody"><!-- 행 반복 -->
+				<li class="td label">
+					<div class="tool">선택</div><!-- 반응형을 위한 항목타이틀 -->
+					<div class="form"><label class="design"><input type="checkbox" name="" /><span class="tx"><span class="icon"></span></span></label></div>
+				</li>
+				<li class="td number">
+					<div class="tool">번호</div>
+					<div class="form">
+						1
+					</div>
+				</li>
+				<li class="td">
+					<div class="tool">성명(상호)</div><!-- 반응형을 위한 항목타이틀 -->
+					<div class="form">
+						<input type="text" name="" value="" class="design right" placeholder="" style="width:120px" />
+					</div>
+				</li>
+				<li class="td">
+					<div class="tool">주민번호<br/>사업자번호</div><!-- 반응형을 위한 항목타이틀 -->
+					<div class="form">
+						<div class="in_box">
+							<ul>
+								<li><input type="tel" name="" value="" class="design" placeholder="사업자번호1" /></li>
+								<li><input type="password" name="" value="" class="design" placeholder="사업자번호1" /></li>
+								<li><input type="password" name="" value="" class="design" placeholder="사업자번호1" /></li>
+							</ul>
+						</div>
+					</div>
+				</li>
+				<li class="td">
+					<div class="tool">종류<br/>용도</div><!-- 반응형을 위한 항목타이틀 -->
+					<div class="form">
+						<div class="select" style="width:130px">
+							<select name="">
+								<option value="0">인지세 납부</option>
+								<option value="0">행정 수수료</option>
+							</select>
+							<i class="icons arrow-download-12"></i>
+						</div>
+					</div>
+				</li>
+				<li class="td">
+					<div class="tool">인지금액</div><!-- 반응형을 위한 항목타이틀 -->
+					<div class="form">
+						<input type="text" name="" value="" class="design right" placeholder="" style="width:120px" />
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<!-- / 채권 목록 -->
+
+
+
+
+	<!-- 합계계산 -->
+	<div class="bond_total">
+		<dl>
+			<dt>
+				<div class="tit">결제방법</div>
+				<div class="exp">
+					<label class="design"><input type="radio" name="" /><span class="tx"><span class="icon"></span>후결제</span></label>
+					<label class="design"><input type="radio" name="" /><span class="tx"><span class="icon"></span>무통장</span></label>
+				</div>
+			</dt>
+			<dd>
+				<div class="wrapping">
+					<ul>
+						<li><span class="price"><i>결제금액 합계</i><strong>157,810</strong><em>원</em></span></li>
+					</ul>
+				</div>
+			</dd>
+		</dl>
+		<dl>
+			<dt>
+				<div class="tit">포인트</div>
+				<div class="exp">500원 이상부터 사용가능 합니다.</div>
+			</dt>
+			<dd>
+				<div class="wrapping">
+					<div class="point_form">
+					<ul>
+						<li><input type="tel" name="" value="" class="design right" placeholder="사용할 포인트" /></li>
+						<li><a href="#none" class="c_btn h35 color red">사용</a></li>
+					</ul>
+				</div>
+					<ul>
+						<li><span class="point"><i>가용 포인트</i><strong>157,810</strong><em>원</em></span></li>
+						<li><span class="point"><i>잔여 포인트</i><strong>157,810</strong><em>원</em></span></li>
+					</ul>
+				</div>
+			</dd>
+		</dl>
+	</div>
+	<!-- / 합계계산 -->
+
+
+
+	<!-- 하단버튼 (공통) -->
+	<div class="c_btn_box">
+		<div class="in">
+			<ul>
+				<li><a href="#none" class="c_btn h50 color sky">확인</a></li>
+			</ul>
+		</div>
+	</div>
+
+
+
+
+	<!-- 페이지 도움말(공통) -->
+	<div class="page_tip">
+		<dl>
+			<dt>관련 안내사항</dt>
+			<dd>
+				<ul>
+					<li>관련 안내 사항을 기재해주세요.</li>
+					<li>관련 안내 사항을 기재해주세요.</li>
+				</ul>
+			</dd>
+		</dl>
+	</div>
+	<!-- / 페이지 도움말(공통) -->
+
+
+
+
+
+</div><!-- ▲ 여기까지 서브컨텐츠 들어감 -->
+
+
+<?
+include_once("container.footer.html");
+include_once("wrap_footer.html");
+?>

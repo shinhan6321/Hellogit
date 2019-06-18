@@ -1,0 +1,179 @@
+<?
+include_once("inc_header.html");
+include_once("wrap_header.html");
+include_once("member.header.html");
+?>
+
+
+
+<div class="section js_popup_stage"><!-- ▼ 여기서부터 서브컨텐츠 들어감 -->
+
+
+
+	<!-- ******************************************
+		◆ SUB TOP
+	  -- ****************************************** -->
+	<div class="sub_top">
+
+		<!-- 2차 타이틀 -->
+		<div class="page_tit"><strong>회원탈퇴</strong></div>
+
+		<!-- 페이지 위치 -->
+		<div class="location">
+			<ul>
+				<li class="home"><a href="" class="btn">홈</a><i class="icons arrow-next-10"></i></li>
+				<li><span class="btn">마이페이지</span><i class="icons arrow-next-10"></i></li>
+				<li><span class="btn">회원탈퇴</span><i class="icons arrow-next-10"></i></li>
+			</ul>
+		</div>
+		<!-- / 페이지 위치 -->
+
+	</div>
+	<!-- / SUB TOP -->
+
+
+
+
+	<!-- ******************************************
+	  ◆ 멤버십 : 회원탈퇴
+	  -- ****************************************** -->
+
+
+	<!-- 폼(공통) -->
+	<div class="c_form">
+
+		<!-- 단락폼 (타이틀+폼) -->
+		<div class="form_box">
+			<!-- 단락타이틀 -->
+			<div class="group_tit">
+				<dl>
+					<dt>회원 탈퇴 정보</dt>
+					<dd>※ 다음 정보를 정확하게 입력해주세요.</dd>
+				</dl>
+			</div>
+			<!-- 폼테이블 필독 ::
+				 * 중요! 툴팁노출을 위해 "input_box"의 인풋"design"과 "tooltip" 순서변경하지말고 그 사이에 소스 절대없도록
+				 * 필수 선택되면 자동노출됨 (css로 제어)
+				 * 필수요소에 ess (dt/dd 모두적용)
+				 * 반응형 특수 구조로, ul.tr 안에 li.td 가 2개가 연속 될 때 컨텐츠 차이가 나지 않도록 배열할것.
+				 * 반응형을 위한 구조이므로 반드시 지켜주세요.
+			  -->
+			<div class="like_table">
+				<ul class="tr">
+					<li class="td">
+						<dl class="inner">
+							<dt class="ess"><span class="opt">아이디</span></dt>
+							<dd class="ess">
+								<div class="input_box readonly" style="width:200px">
+									<input type="text" name="" value="id_ajdlajld" class="design" placeholder="아이디" readonly /><span class="tooltip">필수</span>
+								</div>
+							</dd>
+						</dl>
+					</li>
+					<li class="td">
+						<dl class="inner">
+							<dt class="ess"><span class="opt">비밀번호</span></dt>
+							<dd class="ess">
+								<div class="input_box" style="width:200px">
+									<input type="password" name="" value="" class="design" placeholder="비밀번호" autocomplete="new-password" attribute/><span class="tooltip">필수</span>
+								</div>
+							</dd>
+						</dl>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+
+
+		<!-- ◆ LAYER POP -->
+		<div class="ly_pop">
+			<div class="inner">
+				<div class="layout_fix">
+					<!-- 팝업 타이틀  -->
+					<div class="tit">아이디 찾기 결과<a href="member.find_id.html" class="btn_close js_slider_btn" title="닫기"><i class="icons arrow-cancel-1"></i></a></div>
+					<!-- 팝업 내용 -->
+					<div class="conts">
+
+						<!-- 찾기 결과값 -->
+						<div class="c_result">
+							<dl>
+								<dt>고객님께서 조회하신 아이디는<br/><strong>imsdsd*** </strong>입니다.</dt>
+								<dd>개인정보 도용에 따른 피해 방지를 위해<br/>일부를 별표(*)로 표시하였습니다.</dd>
+							</dl>
+
+							<!-- 하단버튼 (공통) -->
+							<div class="c_btn_box">
+								<div class="in">
+									<ul>
+										<li><a href="member.find_id.html" class="c_btn h40 color light">다시 찾기</a></li>
+										<li><a href="member.login.html" class="c_btn h40 color dark">바로 로그인하기</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<!-- / 찾기 결과값 -->
+
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="ly_pop_bg"></div>
+		<script>
+			// 레이어팝업 열림
+			$(document).on('click','.js_popup_btn',function(){ // 클릭하면 뜰 버튼에 추가
+				var targetClass = '.js_popup_stage'; // section에 추가되어있음
+				var addClassName = 'if_open_popup'; // section에 추가되도록 했음
+				var chk = $(targetClass).hasClass(addClassName);
+				if( chk == false){ $(targetClass).addClass(addClassName); }
+				else {  $(targetClass).removeClass(addClassName);  }
+			});
+		</script>
+		<!-- / LAYER POP -->
+
+
+
+	</div>
+	<!-- / 폼(공통) -->
+
+
+
+
+
+	<!-- 페이지 도움말(공통) -->
+	<div class="page_tip">
+		<dl>
+			<dt>회원탈퇴 시 안내사항</dt>
+			<dd>
+				<ul>
+					<li>회원 탈퇴 시 모든 정보가 바로 삭제되며 복구가 불가능합니다.</li>
+					<li>탈퇴하신 아이디로는 재 가입이 불가능합니다.</li>
+				</ul>
+			</dd>
+		</dl>
+	</div>
+	<!-- / 페이지 도움말(공통) -->
+
+
+
+
+	<!-- 하단버튼 (공통) -->
+	<div class="c_btn_box">
+		<div class="in">
+			<ul>
+				<li><a href="mypage.modify.html" class="c_btn h50 color light">취소</a></li>
+				<li><a href="/bmbond/" class="c_btn h50 color dark">탈퇴 완료</a></li><!-- 정보가 없으면 경고창 -->
+			</ul>
+		</div>
+	</div>
+
+
+
+
+
+</div><!-- ▲ 여기까지 서브컨텐츠 들어감 -->
+
+<?
+include_once("container.footer.html");
+include_once("wrap_footer.html");
+?>

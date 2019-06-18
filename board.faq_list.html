@@ -1,0 +1,329 @@
+<?
+include_once("inc_header.html");
+include_once("wrap_header.html");
+include_once("cs.header.html");
+?>
+
+
+
+
+
+<!-- ******************************************
+  ◆ LEFT MENU
+  -- ****************************************** -->
+<div class="side">
+
+	<!-- 2차메뉴 -->
+	<div class="menu"><!-- 메뉴가 4개를 초과할때 if_more 클래스 -->
+		<ul>
+			<!-- 해당메뉴 hit 클래스 추가 -->
+			<li><a href="company.html" class="ctg2">회사소개</a></li>
+			<li><a href="board.notice_list.html" class="ctg2">공지사항</a></li>
+			<li class="hit"><a href="board.faq_list.html" class="ctg2">FAQ</a></li>
+		</ul>
+	</div>
+	<!-- / 2차메뉴 -->
+
+	<!-- 고객센터 정보 -->
+	<div class="cs_info">
+		<div class="cs_tit"><span class="tx">법무채권 상담센터</span></div>
+		<dl>
+			<dt><strong class="tel_pc">1544-3440</strong><a href="tel:1544-3440" class="tel_mo">1544-3440</a></dt>
+			<dd>FAX : 02-6442-6412</dd>
+			<dd>E-mail : help@bmbond.co.kr</dd>
+			<dd class="open_time">09:30 ~ 18:00 (주말/공휴일 휴무)</dd>
+		</dl>
+	</div>
+	<!-- / 고객센터 정보 -->
+
+</div>
+<!-- / LEFT MENU -->
+
+
+
+
+<div class="section"><!-- ▼ 여기서부터 서브컨텐츠 들어감 -->
+
+
+	<!-- ******************************************
+	  ◆ SUB TOP
+	  -- ****************************************** -->
+	<div class="sub_top">
+
+		<!-- 2차 타이틀 -->
+		<div class="page_tit"><strong>FAQ</strong></div>
+
+		<!-- 페이지 위치 -->
+		<div class="location">
+			<ul>
+				<li class="home"><a href="" class="btn">홈</a><i class="icons arrow-next-10"></i></li>
+				<li><span class="btn">고객서비스</span><i class="icons arrow-next-10"></i></li>
+				<li><span class="btn">FAQ</span><i class="icons arrow-next-10"></i></li>
+			</ul>
+		</div>
+		<!-- / 페이지 위치 -->
+
+		<!-- 모바일 메뉴 -->
+		<div class="menu js_menu_stage ">
+			<a href="#none" class="btn_open js_menu_btn" onclick="return false;" ><span class="shape"></span></a>
+			<div class="menu_box">
+				<ul>
+					<!-- 해당메뉴 hit 클래스 추가 -->
+					<li><a href="company.html" class="ctg2">회사소개</a></li>
+					<li><a href="board.notice_list.html" class="ctg2">공지사항</a></li>
+					<li class="hit"><a href="board.faq_list.html" class="ctg2">FAQ</a></li>
+				</ul>
+			</div>
+		</div>
+		<script>
+			// 메뉴 열림
+			$(document).on('click','.js_menu_btn',function(){
+				var targetClass = '.js_menu_stage';
+				var addClassName = 'if_open_menu';
+				var chk = $(targetClass).hasClass(addClassName);
+				if( chk == false){ $(targetClass).addClass(addClassName); }
+				else {  $(targetClass).removeClass(addClassName);  }
+			});
+		</script>
+		<!-- / 모바일 메뉴 -->
+
+	</div>
+	<!-- SUB TOP -->
+
+
+	<!-- ******************************************
+	  ◆ 고객서비스 : 공지사항
+	  -- ****************************************** -->
+
+	  <!-- 컨텐츠 탭 (공통) -->
+	<div class="sub_tab">
+		<div class="inner">
+			<ul>
+				<li class="hit"><a href="#none" class="btn">전체</a></li>
+				<li class=""><a href="#none" class="btn">사이트 이용</a></li>
+				<li class=""><a href="#nonel" class="btn">채권관련</a></li>
+				<li class=""><a href="#nonel" class="btn">인지관련</a></li>
+				<li class=""><a href="#nonel" class="btn">기타</a></li>
+			</ul>
+		</div>
+	</div>
+	<!-- / 컨텐츠 탭 (공통) -->
+
+
+
+	<!-- 게시판 상단 (공통) -->
+	<div class="board_top">
+		<div class="total">Total <strong>26</strong><!-- 전체 게시물수 --><em>(1/3 Page)</em></div><!-- 현재 페이지 -->
+		<div class="search">
+			<ul>
+				<li class="this_select">
+					<div class="select">
+						<select name="">
+							<option value="0">제목 + 내용</option>
+							<option value="0">제목</option>
+							<option value="0">내용</option>
+						</select>
+						<i class="icons arrow-download-12"></i>
+					</div>
+				</li>
+				<li>
+					<div class="search_form">
+						<form role="search" action="">
+							<input type="search" name="" value="" class="input_search" placeholder="검색어를 입력해주세요.">
+							<span class="btn_box"><input type="submit" name="" value="" class="btn_search" title="검색" /></span>
+						</form>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- / 게시판 상단 (공통) -->
+
+
+
+	<!-- ◆ 게시판 타입 : FAQ -->
+	<div class="board_faq">
+		<div class="list js_faq_stage"><!-- 게시글 한개당 div반복 -->
+			<ul class="tbody">
+				<li class="t_number">4</li>
+				<li class="t_field">사이트 이용</li><!-- 분류 -->
+				<li class="t_title">
+					<div class="posting">
+						<a href="#none" class="upper_link js_faq_btn" onclick="return false;"></a>
+						<span class="icon">Q</span>
+						<div class="title">회원가입은 어떻게 하나요?회원가입은 어떻게 하나요?</div>
+					</div>
+
+				</li>
+			</ul>
+			<!-- FAQ 등록글 -->
+			<div class="open_faq">
+				<div class="inner">
+					<span class="icon">A</span>
+					<div class="title">회원가입은 어떻게 하나요?회원가입은 어떻게 하나요?</div><!-- 모바일 말줄임 시 안보일 경우를 위해 타이틀 나옴(반응형제어) -->
+					신청절차는 채권신청과 동일하며 채권매입신청 화면 하단의 외국인 주민등록번호 조합방법 안내에 따라 주민번호를 조합하여 신청하시면 됩니다. 채권자명은 여권상 영문이름으로 기재해주셔야 합니다.
+				</div>
+			</div>
+		</div>
+		<div class="list js_faq_stage">
+			<ul class="tbody">
+				<li class="t_number">3</li>
+				<li class="t_field">인지관련</li><!-- 분류 -->
+				<li class="t_title">
+					<div class="posting">
+						<a href="#none" class="upper_link js_faq_btn" onclick="return false;"></a>
+						<span class="icon">Q</span>
+						<div class="title">채권변경은 어떻게 하나요?</div>
+					</div>
+
+				</li>
+			</ul>
+			<!-- FAQ 등록글 -->
+			<div class="open_faq">
+				<div class="inner">
+					<span class="icon">A</span>
+					<div class="title">채권변경은 어떻게 하나요?</div>
+					채권변경 가능시간은 오전 8시50분부터 오후 5시20분까지이며, 용도의 내용만 변경 가능하며 금액은 변경되지 않습니다.
+				</div>
+			</div>
+		</div>
+		<div class="list js_faq_stage">
+			<ul class="tbody">
+				<li class="t_number">2</li>
+				<li class="t_field">채권관련</li><!-- 분류 -->
+				<li class="t_title">
+					<div class="posting">
+						<a href="#none" class="upper_link js_faq_btn" onclick="return false;"></a>
+						<span class="icon">Q</span>
+						<div class="title">즉시매도와 채권보유(입고)의 차이점은 무엇인가요?</div>
+					</div>
+
+				</li>
+			</ul>
+			<!-- FAQ 등록글 -->
+			<div class="open_faq">
+				<div class="inner">
+					<span class="icon">A</span>
+					<div class="title">즉시매도와 채권보유(입고)의 차이점은 무엇인가요?</div>
+					① 즉시매도 : 채권매입과 동시에 대행증권사를 통하여 매도하는 방식으로 소액채권시장수익률을 적용하여 산출된 매도단가를 적용합니다.  고객님께서는 채권 매입금액과 즉시매도되는 금액의 차액만 부담하시면 됩니다.<br/>
+					② 계좌입고 : 매입인이 지정한 대행증권사의 계좌에 채권을 입고하는 방식입니다.<br/><br/>
+
+					두가지 방법 모두 매입일과 채권발행일(매월 말일)의 일수에 따라서 선급이자와 이자에 대한 세금이 발생하여고객부담금에 가감되고, 즉시매도 방식은 매도대행수수료도 추가로 발생됩니다.<br/><br/>
+
+					* 포털에서는 계좌입고 방식의 채권매입은 불가능합니다.
+				</div>
+			</div>
+		</div>
+		<div class="list js_faq_stage">
+			<ul class="tbody">
+				<li class="t_number">1</li>
+				<li class="t_field">인지관련</li><!-- 분류 -->
+				<li class="t_title">
+					<div class="posting">
+						<a href="#none" class="upper_link js_faq_btn" onclick="return false;"></a>
+						<span class="icon">Q</span>
+						<div class="title">오래된 데이터를 확인하려고 하는데 어떻게 해야 하나요?</div>
+					</div>
+
+				</li>
+			</ul>
+			<!-- FAQ 등록글 -->
+			<div class="open_faq">
+				<div class="inner">
+					<span class="icon">A</span>
+					<div class="title">오래된 데이터를 확인하려고 하는데 어떻게 해야 하나요?</div>
+					5개월이 지난 데이터는 신청내역조회에서 확인이 불가능하며 신청내역조회에서 데이터 요청을 해주시면 신청하신 다음날 오전 10시부터 오후 4시까지 열람이 가능하며 한 달에 한번만 요청이 가능합니다.
+				</div>
+			</div>
+		</div>
+
+		<script>
+			// faq글열림
+			var targetClass = "js_faq_stage";
+			var selectClass = "js_faq_btn";
+			var eventClass = "if_open_faq";
+			$(document).on('click',"."+selectClass,function(){
+				var chk = $(this).closest('.'+targetClass).hasClass(eventClass);
+				$("."+targetClass).removeClass(eventClass);
+				if( chk == false) $(this).closest('.'+targetClass).addClass(eventClass);
+			});
+		</script>
+
+
+		<!-- 내용없을때 : 게시판 공통 -->
+		<!-- <div class="no_posting">등록된 내용이 없습니다.</div> -->
+	</div>
+	<!-- / 게시판 타입 : 기본형 -->
+
+
+
+	<!-- 페이지네이트 (모든게시판 공통) -->
+	<div class="paginate">
+		<!-- PC페이징 -->
+		<div class="inner if_pc">
+
+			<div class="prevnext prev">
+				<!-- 클릭할 페이지가 있으면 ok 클래스추가 -->
+				<a href="#" title="처음페이지" class="btn_first"><span class="icons arrow-rewind-1"></span></a>
+				<a href="#" title="이전페이지" class="btn_prev"><span class="icons arrow-back-7"></span></a>
+			</div>
+
+			<!-- PC : 10페이지까지 표기 -->
+			<ul class="number">
+				<li class="hit"><a href="">1</a></li>
+				<li class=""><a href="">2</a></li>
+				<li class=""><a href="">3</a></li>
+				<li class=""><a href="">4</a></li>
+				<li class=""><a href="">5</a></li>
+				<li class=""><a href="">6</a></li>
+				<li class=""><a href="">7</a></li>
+				<li class=""><a href="">8</a></li>
+				<li class=""><a href="">9</a></li>
+				<li class=""><a href="">10</a></li>
+			</ul>
+
+			<div class="prevnext next">
+				<!-- 클릭할 페이지가 있으면 ok 클래스추가 -->
+				<a href="#" title="다음페이지" class="btn_next ok"><span class="icons arrow-next-10"></span></a>
+				<a href="#" title="마지막페이지" class="btn_last ok"><span class="icons arrow-fast-forward-1"></span></a>
+			</div>
+		</div>
+
+		<!-- 모바일 페이징 -->
+		<div class="inner if_mo">
+			<div class="prevnext prev">
+				<!-- 클릭할 페이지가 있으면 ok 클래스추가 -->
+				<a href="#" title="처음페이지" class="btn_first"><span class="icons arrow-rewind-1"></span></a>
+				<a href="#" title="이전페이지" class="btn_prev"><span class="icons arrow-back-7"></span></a>
+			</div>
+
+			<!-- 모바일 : 5페이지까지 표기 -->
+			<ul class="number">
+				<li class=""><a href="">1</a></li>
+				<li class=""><a href="">2</a></li>
+				<li class="hit"><a href="">3</a></li>
+				<li class=""><a href="">4</a></li>
+				<li class=""><a href="">5</a></li>
+			</ul>
+
+			<div class="prevnext next">
+				<!-- 클릭할 페이지가 있으면 ok 클래스추가 -->
+				<a href="#" title="다음페이지" class="btn_next ok"><span class="icons arrow-next-10"></span></a>
+				<a href="#" title="마지막페이지" class="btn_last ok"><span class="icons arrow-fast-forward-1"></span></a>
+			</div>
+		</div>
+	</div>
+	<!-- / 페이지네이트 -->
+
+
+
+
+
+
+
+</div><!-- ▲ 여기까지 서브컨텐츠 들어감 -->
+
+<?
+include_once("container.footer.html");
+include_once("wrap_footer.html");
+?>

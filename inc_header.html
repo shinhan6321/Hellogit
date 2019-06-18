@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ko" >
+<head>
+	<title>법무채권 :: 안전하고 편리한 채권매입·전자수입인지</title>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+	<meta name="format-detection" content="telephone=no" />
+
+	<meta name="description" content="법무채권" />
+    <meta name="keywords" content="법무채권" />
+	<meta property="og:locale" content="ko_KR" />
+	<meta property="og:site_name" content="법무채권" />
+	<!-- <meta property="og:url" content="http://www.주소"/> -->
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="법무채권" />
+	<meta property="og:description" content="법무채권" />
+
+	<!-- 홈아이콘(파비콘) -->
+	<link rel="apple-touch-icon-precomposed" href="images/homeicon.png" />
+	<link rel="shortcut icon" href="images/homeicon.png" />
+
+	<!-- js -->
+	<script type="text/javascript" src="js/jquery-1.9.1.js"></script>
+	<script type="text/javascript" src="js/jquery.waypoints.min.js"></script>
+	<script type="text/javascript" language="javascript" src="js/jquery.dotdotdot.js"></script>
+
+	<!-- 디자인css 순서지킬것 -->
+	<link href="css/font.css" rel="stylesheet" type="text/css" /><!-- webfont -->
+	<link href="css/icon/arrow/flaticon.css" rel="stylesheet" type="text/css" /><!-- font_icon : arrow -->
+	<link href="css/icon/ess/flaticon.css" rel="stylesheet" type="text/css" /><!-- font_icon : essential -->
+	<link href="css/default_setting.css" rel="stylesheet" type="text/css" /><!-- default -->
+	<link href="css/design.css" rel="stylesheet" type="text/css" /><!-- design element -->
+	<link href="css/design_main.css" rel="stylesheet" type="text/css" /><!-- mainpage -->
+	<link href="css/design_sub.css" rel="stylesheet" type="text/css" /><!-- subpage -->
+	<link href="css/responsive.css" rel="stylesheet" type="text/css" /><!-- responsive -->
+
+	<!-- 구글 영문웹폰트 -->
+	<link href="https://fonts.googleapis.com/css?family=Heebo:100,300,400,500,700,800,900" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Cabin:400,500,600,700" rel="stylesheet">
+
+</head>
+<body>
+
+
+<!-- 2줄이상의 말줄임 / 기본제이쿼리사용 후 확인바람-->
+<script type="text/javascript" language="javascript">
+	$(function() {
+		$('.ellipsis').dotdotdot();
+
+		$('#dot2').dotdotdot();
+
+		$('#dot3').dotdotdot({
+			after: 'a.readmore'
+		});
+
+		$('#dot4').dotdotdot({
+			watch: 'window'
+		});
+
+		var $dot5 = $('#dot5');
+		$dot5.append( ' <a class="toggle" href="#"><span class="open">[ + ]</span><span class="close">[ - ]</span></a>' );
+
+
+		function createDots()
+		{
+			$dot5.dotdotdot({
+				after: 'a.toggle'
+			});
+		}
+		function destroyDots() {
+			$dot5.trigger( 'destroy' );
+		}
+		createDots();
+
+		$dot5.on(
+			'click',
+			'a.toggle',
+			function() {
+				$dot5.toggleClass( 'opened' );
+
+				if ( $dot5.hasClass( 'opened' ) ) {
+					destroyDots();
+				} else {
+					createDots();
+				}
+				return false;
+			}
+		);
+
+		$('#dot6 .pathname').each(function() {
+			var path = $(this).html().split( '/' );
+			if ( path.length > 1 ) {
+				var name = path.pop();
+				$(this).html( path.join( '/' ) + '<span class="filename">/' + name + '</span>' );
+				$(this).dotdotdot({
+					after: '.filename',
+					wrap: 'letter'
+				});
+			}
+		});
+
+	});
+</script>
+
+<div class="wrap" name="topPosition" id="topPosition">

@@ -1,0 +1,149 @@
+
+
+
+
+
+
+<!-- ******************************************
+  ◆ SCROLL_FIX (COMMON)
+  -- ****************************************** -->
+<div class="scroll_fix js_scroll_stage ">
+
+	<div class="in_box">
+		<div class="tit">QUICK<u> MENU</u></div>
+		<div class="menu">
+			<ul>
+				<li><a href="bond.apply_form.html" class="btn ic1"><span class="icon"></span><span class="tx">채권매입 신청</span></a></li>
+				<li><a href="bond.apply_list.html" class="btn ic2"><span class="icon"></span><span class="tx">신청내역 조회</span></a></li>
+				<li><a href="bond.change_form.html" class="btn ic3"><span class="icon"></span><span class="tx">채권 변경/취소</span></a></li>
+				<li><a href="tax.apply_form.html" class="btn ic4"><span class="icon"></span><span class="tx">수입인지 매입</span></a></li>
+			</ul>
+		</div>
+	</div>
+	<script type="text/javascript">
+		// 스크롤 내리면 나타나는 스크립트
+		$(window).scroll(function() {
+			var scroll = $(window).scrollTop();
+			if (scroll >= 50) {
+				$(".js_scroll_stage").addClass("if_scroll");
+			} else {
+				$(".js_scroll_stage").removeClass("if_scroll");
+			}
+		});
+	</script>
+
+</div>
+
+<!-- 맨위로 버튼 -->
+<a href="#none" onclick="return false;" data-scrollto="topPosition" class="go_top btn_gotop" title="맨위로" style="display:none"><span class="shape"></span></a>
+<script>
+	// 스크롤 내리면 나타나고, 맨위로 가는 버튼
+  $( document ).ready( function() {
+	$( window ).scroll( function() {
+	  if ( $( this ).scrollTop() > 200 ) {
+		$( '.go_top' ).fadeIn();
+	  } else {
+		$( '.go_top' ).fadeOut();
+	  }
+	} );
+	$( '.go_top' ).click( function() {
+	  $( 'html, body' ).animate( { scrollTop : 0 }, 400 );
+	  return false;
+	} );
+  } );
+</script>
+<!-- / SCROLL_FIX (COMMON) -->
+
+
+
+
+
+
+
+
+
+
+
+<!-- ******************************************
+  ◆ FOOTER (COMMON)
+  -- ****************************************** -->
+<div class="footer">
+
+
+	<!-- 하단영역 -->
+	<div class="bottom">
+		<div class="layout_fix">
+			<div class="table">
+
+				<!-- 하단메뉴 -->
+				<div class="box menu">
+					<ul>
+						<li><a href="company.html" class="btn">회사소개</a></li>
+						<li><a href="agree.html" class="btn">이용약관</a></li>
+						<li><a href="privacy.html" class="btn"><strong>개인정보처리방침</strong></a></li>
+						<li><a href="board.faq_list.html" class="btn">FAQ</a></li>
+					</ul>
+				</div>
+
+				<!-- 소셜 바로가기 -->
+				<div class="box sns">
+					<ul>
+						<li><a href="#" class="btn tw" title="트위터" target="_blank"><span class="icon"></span></a></li>
+						<li><a href="#" class="btn bl" title="블로그" target="_blank"><span class="icon"></span></a></li>
+						<li><a href="#" class="btn fa" title="페이스북" target="_blank"><span class="icon"></span></a></li>
+						<li><a href="#" class="btn in" title="인스타그램" target="_blank"><span class="icon"></span></a></li>
+						<li><a href="#" class="btn st" title="카카오스토리" target="_blank"><span class="icon"></span></a></li>
+						<li><a href="#" class="btn kt" title="카카오톡" target="_blank"><span class="icon"></span></a></li>
+					</ul>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<!-- / 하단영역 -->
+
+
+	<!-- 카피라잇정보  -->
+	<div class="info">
+		<div class="layout_fix">
+
+			<!-- 하단로고  -->
+			<div class="logo">
+				<img src="images/default/footer_logo.png" alt="" class="img_pc" />
+				<img src="images/mo/default/footer_logo.png" alt="" class="img_mo" />
+			</div>
+
+			<!-- 회사정보 -->
+			<ul class="about">
+				<li>
+					<span class="tx">회사명 : 법무채권</span>
+					<span class="tx">대표자 : 곽동환</span>
+					<span class="tx">소재지 : 광주광역시 서구 유림로 98번길 41,403호(동천동)</span>
+				</li>
+				<li>
+					<span class="tx">대표전화 : 1544-3440</span>
+					<span class="tx">팩스번호 : 02-6442-6412</span>
+					<span class="tx">사업자등록번호 : 123-00-456789</span>
+				</li>
+				<li>
+					<span class="tx">이메일 : help@bmbond.co.kr</span>
+					<span class="tx">개인정보취급책임자 : 곽동환</span>
+				</li>
+			</ul>
+			<div class="copyright">COPYRIGHT © BM BOND. ALL RIGHTS RESERVED.</div>
+
+		</div>
+	</div>
+	<!-- / 카피라잇정보 -->
+
+</div>
+<!--  / FOOTER (COMMON) -->
+
+
+
+
+
+
+</div>
+</body>
+</html>

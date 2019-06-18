@@ -1,0 +1,295 @@
+<?
+include_once("inc_header.html");
+include_once("wrap_header2.html");
+include_once("tax.header.html");
+?>
+
+
+
+
+
+<!-- ******************************************
+  ◆ LEFT MENU
+  -- ****************************************** -->
+<div class="side">
+
+	<!-- 2차메뉴 -->
+	<div class="menu"><!-- 메뉴가 4개를 초과할때 if_more 클래스 -->
+		<ul>
+			<!-- 해당메뉴 hit 클래스 추가 -->
+			<li class=""><a href="tax.apply_form.html" class="ctg2">인지매입신청</a></li>
+			<li class=""><a href="tax.cancel_form.html" class="ctg2">인지취소신청</a></li>
+			<li class=""><a href="tax.re_form.html" class="ctg2">인지환매신청</a></li>
+			<li class=""><a href="tax.apply_list.html" class="ctg2">인지매입내역조회</a></li>
+			<li class=""><a href="tax.cancel_list.html" class="ctg2">인지취소내역조회</a></li>
+			<li class=""><a href="tax.re_list.html" class="ctg2">인지환매내역조회</a></li>
+			<li class=""><a href="point.save_list.html" class="ctg2">포인트적립내역</a></li>
+			<li class="hit"><a href="point.use_list.html" class="ctg2">포인트사용내역</a></li>
+		</ul>
+	</div>
+	<!-- / 2차메뉴 -->
+
+	<!-- 고객센터 정보 -->
+	<div class="cs_info">
+		<div class="cs_tit"><span class="tx">법무채권 상담센터</span></div>
+		<dl>
+			<dt><strong class="tel_pc">1544-3440</strong><a href="tel:1544-3440" class="tel_mo">1544-3440</a></dt>
+			<dd>FAX : 02-6442-6412</dd>
+			<dd>E-mail : help@bmbond.co.kr</dd>
+			<dd class="open_time">09:30 ~ 18:00 (주말/공휴일 휴무)</dd>
+		</dl>
+	</div>
+	<!-- / 고객센터 정보 -->
+
+</div>
+<!-- / LEFT MENU -->
+
+
+
+<div class="section"><!-- ▼ 여기서부터 서브컨텐츠 들어감 -->
+
+
+
+	<!-- ******************************************
+	  ◆ SUB TOP
+	  -- ****************************************** -->
+	<div class="sub_top">
+
+		<!-- 2차 타이틀 -->
+		<div class="page_tit"><strong>포인트사용내역</strong></div>
+
+		<!-- 페이지 위치 -->
+		<div class="location">
+			<ul>
+				<li class="home"><a href="" class="btn">홈</a><i class="icons arrow-next-10"></i></li>
+				<li><span class="btn">전자수입인지</span><i class="icons arrow-next-10"></i></li>
+				<li><span class="btn">포인트사용내역</span><i class="icons arrow-next-10"></i></li>
+			</ul>
+		</div>
+		<!-- / 페이지 위치 -->
+
+		<!-- 모바일 메뉴 -->
+		<div class="menu js_menu_stage ">
+			<a href="#none" class="btn_open js_menu_btn" onclick="return false;" ><span class="shape"></span></a>
+			<div class="menu_box">
+				<ul>
+					<!-- 해당메뉴 hit 클래스 추가 -->
+					<li class=""><a href="tax.apply_form.html" class="ctg2">인지매입신청</a></li>
+					<li class=""><a href="tax.cancel_form.html" class="ctg2">인지취소신청</a></li>
+					<li class=""><a href="tax.re_form.html" class="ctg2">인지환매신청</a></li>
+					<li class=""><a href="tax.apply_list.html" class="ctg2">인지매입내역조회</a></li>
+					<li class=""><a href="tax.cancel_list.html" class="ctg2">인지취소내역조회</a></li>
+					<li class=""><a href="tax.re_list.html" class="ctg2">인지환매내역조회</a></li>
+					<li class=""><a href="point.save_list.html" class="ctg2">포인트적립내역</a></li>
+					<li class="hit"><a href="point.use_list.html" class="ctg2">포인트사용내역</a></li>
+				</ul>
+			</div>
+		</div>
+		<script>
+			// 메뉴 열림
+			$(document).on('click','.js_menu_btn',function(){
+				var targetClass = '.js_menu_stage';
+				var addClassName = 'if_open_menu';
+				var chk = $(targetClass).hasClass(addClassName);
+				if( chk == false){ $(targetClass).addClass(addClassName); }
+				else {  $(targetClass).removeClass(addClassName);  }
+			});
+		</script>
+		<!-- / 모바일 메뉴 -->
+
+	</div>
+	<!-- SUB TOP -->
+
+
+
+	<!-- ******************************************
+	  ◆ 채권/인지목록
+	  -- ****************************************** -->
+
+
+
+	<!-- 채권 목록 -->
+	<div class="bond_list">
+		<div class="table">
+			<ul class="thead">
+				<li class="td number">번호</li>
+				<li class="td">사용일자</li>
+				<li class="td">인지 매입건수</li>
+				<li class="td">인지 총 매입금액</li>
+				<li class="td">인지 총 납부금액</li>
+				<li class="td">사용 포인트</li>
+			</ul>
+			<ul class="tbody"><!-- 행 반복 -->
+				<li class="td number">
+					<div class="tool">번호</div>
+					<div class="form">
+						1
+					</div>
+				</li>
+				<li class="td">
+					<div class="tool">사용일자</div>
+					<div class="form">
+						2018-06-13
+					</div>
+				</li>
+				<li class="td">
+					<div class="tool">인지 매입건수</div><!-- 반응형을 위한 항목타이틀 -->
+					<div class="form">
+						10 건
+					</div>
+				</li>
+				<li class="td">
+					<div class="tool">인지 총 매입금액</div><!-- 반응형을 위한 항목타이틀 -->
+					<div class="form">
+						1,500,000 원
+					</div>
+				</li>
+				<li class="td">
+					<div class="tool">인지 총 납부금액</div><!-- 반응형을 위한 항목타이틀 -->
+					<div class="form">
+						7,500 P
+					</div>
+				</li>
+				<li class="td">
+					<div class="tool">사용 포인트</div><!-- 반응형을 위한 항목타이틀 -->
+					<div class="form">
+						1,033,100 P (포인트출금)
+					</div>
+				</li>
+			</ul>
+			<ul class="tbody"><!-- 행 반복 -->
+				<li class="td number">
+					<div class="tool">번호</div>
+					<div class="form">
+						1
+					</div>
+				</li>
+				<li class="td">
+					<div class="tool">사용일자</div>
+					<div class="form">
+						2018-06-13
+					</div>
+				</li>
+				<li class="td">
+					<div class="tool">인지 매입건수</div><!-- 반응형을 위한 항목타이틀 -->
+					<div class="form">
+						10 건
+					</div>
+				</li>
+				<li class="td">
+					<div class="tool">인지 총 매입금액</div><!-- 반응형을 위한 항목타이틀 -->
+					<div class="form">
+						1,500,000 원
+					</div>
+				</li>
+				<li class="td">
+					<div class="tool">인지 총 납부금액</div><!-- 반응형을 위한 항목타이틀 -->
+					<div class="form">
+						7,500 P
+					</div>
+				</li>
+				<li class="td">
+					<div class="tool">사용 포인트</div><!-- 반응형을 위한 항목타이틀 -->
+					<div class="form">
+						1,033,100 P (포인트출금)
+					</div>
+				</li>
+			</ul>
+		</div>
+
+		<!-- 내용없을때 : 게시판 공통 -->
+		<!-- <div class="no_posting">등록된 내용이 없습니다.</div> -->
+	</div>
+	<!-- / 채권 목록 -->
+
+
+
+
+
+
+	<!-- 페이지네이트 (모든게시판 공통) -->
+	<div class="paginate">
+		<!-- PC페이징 -->
+		<div class="inner if_pc">
+
+			<div class="prevnext prev">
+				<!-- 클릭할 페이지가 있으면 ok 클래스추가 -->
+				<a href="#" title="처음페이지" class="btn_first"><span class="icons arrow-rewind-1"></span></a>
+				<a href="#" title="이전페이지" class="btn_prev"><span class="icons arrow-back-7"></span></a>
+			</div>
+
+			<!-- PC : 10페이지까지 표기 -->
+			<ul class="number">
+				<li class="hit"><a href="">1</a></li>
+				<li class=""><a href="">2</a></li>
+				<li class=""><a href="">3</a></li>
+				<li class=""><a href="">4</a></li>
+				<li class=""><a href="">5</a></li>
+				<li class=""><a href="">6</a></li>
+				<li class=""><a href="">7</a></li>
+				<li class=""><a href="">8</a></li>
+				<li class=""><a href="">9</a></li>
+				<li class=""><a href="">10</a></li>
+			</ul>
+
+			<div class="prevnext next">
+				<!-- 클릭할 페이지가 있으면 ok 클래스추가 -->
+				<a href="#" title="다음페이지" class="btn_next ok"><span class="icons arrow-next-10"></span></a>
+				<a href="#" title="마지막페이지" class="btn_last ok"><span class="icons arrow-fast-forward-1"></span></a>
+			</div>
+		</div>
+
+		<!-- 모바일 페이징 -->
+		<div class="inner if_mo">
+			<div class="prevnext prev">
+				<!-- 클릭할 페이지가 있으면 ok 클래스추가 -->
+				<a href="#" title="처음페이지" class="btn_first"><span class="icons arrow-rewind-1"></span></a>
+				<a href="#" title="이전페이지" class="btn_prev"><span class="icons arrow-back-7"></span></a>
+			</div>
+
+			<!-- 모바일 : 5페이지까지 표기 -->
+			<ul class="number">
+				<li class=""><a href="">1</a></li>
+				<li class=""><a href="">2</a></li>
+				<li class="hit"><a href="">3</a></li>
+				<li class=""><a href="">4</a></li>
+				<li class=""><a href="">5</a></li>
+			</ul>
+
+			<div class="prevnext next">
+				<!-- 클릭할 페이지가 있으면 ok 클래스추가 -->
+				<a href="#" title="다음페이지" class="btn_next ok"><span class="icons arrow-next-10"></span></a>
+				<a href="#" title="마지막페이지" class="btn_last ok"><span class="icons arrow-fast-forward-1"></span></a>
+			</div>
+		</div>
+	</div>
+	<!-- / 페이지네이트 -->
+
+
+
+
+	<!-- 페이지 도움말(공통) -->
+	<div class="page_tip">
+		<dl>
+			<dt>관련 안내사항</dt>
+			<dd>
+				<ul>
+					<li>관련 안내 사항을 기재해주세요.</li>
+					<li>관련 안내 사항을 기재해주세요.</li>
+				</ul>
+			</dd>
+		</dl>
+	</div>
+	<!-- / 페이지 도움말(공통) -->
+
+
+
+
+
+</div><!-- ▲ 여기까지 서브컨텐츠 들어감 -->
+
+
+<?
+include_once("container.footer.html");
+include_once("wrap_footer.html");
+?>

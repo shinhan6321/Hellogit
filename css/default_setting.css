@@ -1,0 +1,163 @@
+@charset 'utf-8';
+
+/*
+ * Copyright      :    Gobeyond.co.kr / 법무채권
+ * Directory      :    /css/
+ * File           :    default_setting.css
+ * DESCRIPTION    :    html,body 기본값
+ *
+ * ***********************************************
+ *
+ * SUMMARY
+ * 01) GLOBAL
+ * 02) FORM
+ * 03) ESSENTIAL
+ * 04) TRANSITION
+ */
+
+
+
+
+/* ********************************************** *
+ * GLOBAL
+ * ********************************************** */
+html {width:100%; height:100%; }
+body {margin:0; padding:0; background:#fff; overflow-y:scroll; height:100%; overflow-x:hidden;}
+body {font-family:"Heebo",Malgun Gothic,맑은고딕,sans-serif; font-size:13px; font-weight:400; letter-spacing:-0.5px; color:#61616e; line-height:1.1;}
+* {color:inherit; font-family:inherit; font-size:inherit; font-weight:inherit; letter-spacing:inherit; line-height:inherit; text-decoration-skip-ink: none; -webkit-text-size-adjust:none;}
+b,strong {font-weight:600}
+p,form,span,h1,h2,h3,h4,h5,h6 {margin:0; padding:0; font-weight:normal}
+div,table {margin:0; padding:0; border-spacing:0; border-collapse:collapse; border:0px none; -webkit-overflow-scrolling: touch;}
+table caption { width:0px; height:0px; font-size:0; visibility:hidden; }
+ul,ol,li,td,dl,dt,dd {margin:0; padding:0;}
+em,i {font-style:normal;}
+u {text-decoration:none;}
+a,span {display:inline-block;}
+img {border:0; max-width:100%}
+table caption {width:0px; height:0px; font-size:0; visibility:hidden; }
+a:link, a:visited {color:inherit; text-decoration:none; cursor:pointer; font-size:inherit}
+a:hover, a:active {text-decoration: none;}
+
+
+
+
+
+
+
+/* ********************************************** *
+ * FORM
+ * ********************************************** */
+/* lable */
+label {display:inline-block; overflow:hidden; cursor:pointer;}
+label input[type=checkbox],label input[type=radio] {float:left; margin-right:5px; height:13px; width:13px; cursor:pointer; -webkit-gradient:none; -webkit-border-radius:0;}
+
+/* input */
+input[type=text],input[type=password],input[type=number],input[type=email],input[type=tel],input[type=date],input[type=file],input[type=search], input[type=submit],input[type=url], input[type=button], button
+{-webkit-appearance:none; -webkit-gradient:none; -webkit-border-radius:0; border:none; background:none; box-sizing:border-box; border-radius:0px;}
+input[type=number]::-webkit-outer-spin-button, input[type=number]::-webkit-inner-spin-button {-webkit-appearance:none; margin:0;} /* 오른쪽에 나타나는 화살표 버튼없애기 */
+input[type=date]::-webkit-outer-spin-button, input[type=date]::-webkit-inner-spin-button {-webkit-appearance:none; margin:0; border:0;} /* 오른쪽에 나타나는 화살표 버튼없애기 */
+input[type=text],input[type=password],input[type=number],input[type=email],input[type=tel],input[type=date],input[type=file],input[type=search],input[type=url]:focus {color:#31313e}
+input::-ms-clear {display: none;}
+input[type=search]::-webkit-search-decoration,
+input[type=search]::-webkit-search-cancel-button,
+input[type=search]::-webkit-search-results-button,
+input[type=search]::-webkit-search-results-decoration {display:none;}
+textarea {border:none; background:none; box-sizing:border-box; width:100%; -webkit-appearance:none; -webkit-border-radius:0; -webkit-overflow-scrolling: touch;}
+input[type=submit] {cursor:pointer !important}
+
+/* 크롬 자동완성 BG색 버림(아이디비번저장 시) */
+input:-webkit-autofill {-webkit-box-shadow: 0 0 0px 1000px #fff inset;}
+input:-webkit-autofill:focus {-webkit-box-shadow: 0 0 0px 1000px #fff inset;}
+
+/* textarea */
+textarea {color:#61616e; background:transparent; margin:0;padding:0; border:0; }
+textarea:focus {color:#31313e !important;}
+
+/* select */
+select {cursor:pointer; font-size: inherit !important; font-family: inherit !important;}
+
+/* select desgin */
+.select {overflow:hidden; position:relative; background:#fff; height:35px; width:100%;}
+.select select {box-sizing:border-box; border:1px solid #d1d1de; height:35px; line-height:35px; width:100%; padding-left:6px; color:#999; position:absolute; left:0; top:0; z-index:2; background:none !important; }
+.select select {width:100%; -webkit-appearance: none; appearance: none; -moz-appearance: none; -webkit-user-select: none;  padding-right:30px; border-radius:0; -webkit-border-radius:0 !important;}
+.select select::-ms-expand {display:none;}
+.select .icons {height:100%; position:absolute; right:0; top:0; z-index:1; color:#ccc; text-align:center; width:30px; line-height:35px; font-size:0.85em; font-weight:600;}
+.select .icons:before {position:absolute; left:0; top:0; width:30px; line-height:35px;}
+.select select:focus+ .icons:before {color:#91919e; }
+.select select:focus+ .icons:before {transform: rotate(180deg); -webkit-transform: rotate(180deg);}
+.select select:focus {border:1px solid #91919e; color:#31313e;}
+
+/* placeholder  */
+placeholder {color:#bec1c6 !important;}
+input::-webkit-input-placeholder {color:#bec1c6 !important;}
+input:-ms-input-placeholder {color:#bec1c6 !important;}
+input:-moz-placeholder {color:#bec1c6 !important;}
+textarea::-webkit-input-placeholder {color:#bec1c6 !important;}
+textarea:-ms-input-placeholder {color:#bec1c6 !important;}
+textarea:-moz-placeholder {color:#bec1c6 !important;}
+
+/* 검색인풋에 자동x버튼 삭제 */
+input[type=search]::-webkit-search-decoration,
+input[type=search]::-webkit-search-cancel-button,
+input[type=search]::-webkit-search-results-button,
+input[type=search]::-webkit-search-results-decoration {display:none;}
+
+/* 인풋포커스 라인삭제 : 웹접근성 작업 시 사용하면 안됨 */
+input,select,textarea {outline:none}
+
+/* 마우스 드래그시 컬러 (디자인적으로 필요하면 사용) 하위브라우저 적용안됨 */
+::selection {background:#42bfec; color:#fff; text-shadow: none;}
+::-moz-selection {background:#42bfec; color:#fff; text-shadow: none;}
+::-webkit-selection {background:#42bfec; color:#fff; text-shadow: none;}
+
+
+
+
+
+
+
+
+/* ********************************************** *
+ * ESSENTIAL
+ * ********************************************** */
+.wrap {position:relative;} /* 사이트 전체 감싸는 영역 */
+.lineup {display:inline-block} /* float요소들 정렬시킬때 사용 */
+.layout_fix {max-width:1200px; margin:0 auto; position:relative; box-sizing:border-box;} /* 이부분 실작업시 수정할것!  컨첸츠 레이아웃 전체값 */
+.upper_link {position:absolute; left:0; top:0; width:100%; height:100%; box-sizing:border-box; z-index:9; cursor:pointer !important} /* z-index값 수정하지말것 */
+
+
+
+
+
+
+
+
+
+
+
+/* ********************************************** *
+ * TRANSITION
+ * ********************************************** */
+* {transition-property: color,margin-left,margin-right,margin-top,margin-bottom,width,height,background-color,top,left,right,bottom,background-position,
+                        opacity,border-radius,transform,padding-top,padding-bottom,padding-left,padding-right,border;
+   -webkit-transition-property: color,margin-left,margin-right,margin-top,margin-bottom,width,height,background-color,top,left,right,bottom,background-position,
+                                opacity,border-radius,transform,padding-top,padding-bottom,padding-left,padding-right,border;
+   transition-duration: 0.25s;
+   -webkit-transition-duration: 0.25s;
+   transition-timing-function:ease-in-out;
+   -webkit-transition-timing-function:ease-in-out;}
+
+:before {transition-property: all;
+   -webkit-transition-property: all;
+   transition-duration: 0.25s;
+   -webkit-transition-duration: 0.25s;
+   transition-timing-function:ease-in-out;
+   -webkit-transition-timing-function:ease-in-out;}
+
+:after {transition-property: all;
+   -webkit-transition-property: all;
+   transition-duration: 0.25s;
+   -webkit-transition-duration: 0.25s;
+   transition-timing-function:ease-in-out;
+   -webkit-transition-timing-function:ease-in-out;}
+

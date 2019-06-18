@@ -1,0 +1,258 @@
+<?
+include_once("inc_header.html");
+include_once("wrap_header.html");
+include_once("cs.header.html");
+?>
+
+
+
+
+
+<!-- ******************************************
+  ◆ LEFT MENU
+  -- ****************************************** -->
+<div class="side">
+
+	<!-- 2차메뉴 -->
+	<div class="menu"><!-- 메뉴가 4개를 초과할때 if_more 클래스 -->
+		<ul>
+			<!-- 해당메뉴 hit 클래스 추가 -->
+			<li><a href="company.html" class="ctg2">회사소개</a></li>
+			<li class="hit"><a href="board.notice_list.html" class="ctg2">공지사항</a></li>
+			<li><a href="board.faq_list.html" class="ctg2">FAQ</a></li>
+		</ul>
+	</div>
+	<!-- / 2차메뉴 -->
+
+	<!-- 고객센터 정보 -->
+	<div class="cs_info">
+		<div class="cs_tit"><span class="tx">법무채권 상담센터</span></div>
+		<dl>
+			<dt><strong class="tel_pc">1544-3440</strong><a href="tel:1544-3440" class="tel_mo">1544-3440</a></dt>
+			<dd>FAX : 02-6442-6412</dd>
+			<dd>E-mail : help@bmbond.co.kr</dd>
+			<dd class="open_time">09:30 ~ 18:00 (주말/공휴일 휴무)</dd>
+		</dl>
+	</div>
+	<!-- / 고객센터 정보 -->
+
+</div>
+<!-- / LEFT MENU -->
+
+
+
+
+<div class="section"><!-- ▼ 여기서부터 서브컨텐츠 들어감 -->
+
+
+
+	<!-- ******************************************
+	  ◆ SUB TOP
+	  -- ****************************************** -->
+	<div class="sub_top">
+
+		<!-- 2차 타이틀 -->
+		<div class="page_tit"><strong>공지사항</strong></div>
+
+		<!-- 페이지 위치 -->
+		<div class="location">
+			<ul>
+				<li class="home"><a href="" class="btn">홈</a><i class="icons arrow-next-10"></i></li>
+				<li><span class="btn">고객서비스</span><i class="icons arrow-next-10"></i></li>
+				<li><span class="btn">공지사항</span><i class="icons arrow-next-10"></i></li>
+			</ul>
+		</div>
+		<!-- / 페이지 위치 -->
+
+		<!-- 모바일 메뉴 -->
+		<div class="menu js_menu_stage ">
+			<a href="#none" class="btn_open js_menu_btn" onclick="return false;" ><span class="shape"></span></a>
+			<div class="menu_box">
+				<ul>
+					<!-- 해당메뉴 hit 클래스 추가 -->
+					<li><a href="company.html" class="ctg2">회사소개</a></li>
+					<li class="hit"><a href="board.notice_list.html" class="ctg2">공지사항</a></li>
+					<li><a href="board.faq_list.html" class="ctg2">FAQ</a></li>
+				</ul>
+			</div>
+		</div>
+		<script>
+			// 메뉴 열림
+			$(document).on('click','.js_menu_btn',function(){
+				var targetClass = '.js_menu_stage';
+				var addClassName = 'if_open_menu';
+				var chk = $(targetClass).hasClass(addClassName);
+				if( chk == false){ $(targetClass).addClass(addClassName); }
+				else {  $(targetClass).removeClass(addClassName);  }
+			});
+		</script>
+		<!-- / 모바일 메뉴 -->
+
+	</div>
+	<!-- SUB TOP -->
+
+
+
+	<!-- ******************************************
+	  ◆ 고객서비스 : 공지사항
+	  -- ****************************************** -->
+
+	<!-- ◆ 폼(공통) -->
+	<div class="c_form">
+
+		<!-- 단락폼 (타이틀+폼) -->
+		<div class="form_box">
+			<!-- 단락타이틀 -->
+			<div class="group_tit">
+				<dl>
+					<dt><em>게시물 등록</em></dt>
+					<dd><i class="ess">체크</i>된 항목은 필수항목이므로 꼭 입력해주세요.</dd>
+				</dl>
+			</div>
+			<!-- 폼테이블
+				 * 중요! 툴팁노출을 위해 "input_box"의 인풋"design"과 "tooltip" 순서변경하지말고 그 사이에 소스 절대없도록 / 필수 선택되면 자동노출됨(css로 제어)
+				 * 필수요소에 ess (dt/dd 모두적용) / 폼 구조 수정시 반드시 디자이너에게 요청
+			* -->
+			<div class="like_table">
+				<ul class="tr">
+					<li class="td">
+						<dl class="inner">
+							<dt class="ess"><span class="opt">제목</span></dt>
+							<dd class="ess">
+								<div class="input_box">
+									<input type="text" name="" value="" class="design" placeholder="제목을 입력해주세요." /><!-- 절대소스금지 --><span class="tooltip"></span>
+								</div>
+							</dd>
+						</dl>
+					</li>
+				</ul>
+				<ul class="tr">
+					<li class="td">
+						<dl class="inner">
+							<dt class="ess"><span class="opt">분류</span></dt>
+							<dd class="ess">
+								<div class="select" style="width:50%">
+									<select name="">
+										<option value="0">- 게시판 분류 선택 -</option><!-- 셀렉트 박스의 첫번째 값 형식 맞출것 (양쪽 하이픈) -->
+										<option value="0">사이트 이용</option>
+										<option value="0">채권업무</option>
+										<option value="0">인지업무</option>
+									</select>
+									<i class="icons arrow-download-12"></i>
+								</div>
+							</dd>
+						</dl>
+					</li>
+				</ul>
+				<ul class="tr">
+					<li class="td">
+						<dl class="inner">
+							<dt class="ess"><span class="opt">작성자</span></dt>
+							<dd class="ess">
+								<div class="input_box" >
+									<input type="text" name="" value="" class="design" placeholder="이름" />
+									<span class="tooltip">필수</span>
+								</div>
+							</dd>
+						</dl>
+					</li>
+					<li class="td">
+						<dl class="inner">
+							<dt class=""><span class="opt">구분</span></dt>
+							<dd class="">
+								<label class="design"><input type="checkbox" name="" /><span class="tx"><span class="icon"></span>공지사항</span></label>
+								<label class="design"><input type="checkbox" name="" /><span class="tx"><span class="icon"></span>비밀글</span></label>
+							</dd>
+						</dl>
+					</li>
+				</ul>
+				<ul class="tr">
+					<li class="td">
+						<dl class="inner">
+							<dt class="ess"><span class="opt">비밀번호</span></dt>
+							<dd class="ess">
+								<div class="input_box">
+									<input type="password" name="" value="" class="design" placeholder="4~8자의 숫자 또는 영문" />
+									<span class="tooltip">필수</span>
+								</div>
+							</dd>
+						</dl>
+					</li>
+					<li class="td">
+						<dl class="inner">
+							<dt class="ess"><span class="opt">비밀번호 확인</span></dt>
+							<dd class="ess">
+								<div class="input_box">
+									<input type="password" name="" value="" class="design" placeholder="동일하게 입력" />
+									<span class="tooltip">필수</span>
+								</div>
+							</dd>
+						</dl>
+					</li>
+				</ul>
+				<ul class="tr if_editor"><!-- 내용 및 에디터 들어가는 부분 if_editor -->
+					<li class="td">
+						<dl class="inner">
+							<dt class="ess"><span class="opt">내용</span></dt>
+							<dd class="ess">
+								<!-- 에디터 들어갈 수도 있음 -->
+								<textarea name="" rows="" cols="" class="design"></textarea>
+							</dd>
+						</dl>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+
+		<!-- 단락폼 / 비회원 글쓸때만 (없으면 전체 숨김) -->
+		<div class="form_box">
+			<!-- 단락타이틀 -->
+			<div class="group_tit">
+				<dl>
+					<dt><em>비회원 개인정보처리방침</em></dt>
+					<dd>※ 다음 약관을 읽고 내용에 동의해주십시오.</dd>
+				</dl>
+			</div>
+			<!-- 폼테이블 -->
+			<div class="agree_form">
+				<ul>
+					<li>
+						<textarea name="" rows="" cols="" class="design" readonly>
+<?
+include_once("member.privacy.txt");
+?>
+						</textarea>
+						<div class="agree">
+							<label class="design"><input type="checkbox" name="" /><span class="tx"><span class="icon"></span>위 내용을 읽고 이에 동의합니다.</span></label>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+
+	</div>
+	<!-- ◆ 폼(공통) -->
+
+
+
+	<!-- 하단버튼 영역 (공통) -->
+	<div class="c_btn_box">
+		<div class="in">
+			<ul>
+				<li><a href="board.view.html" class="c_btn h40 color light">취소</a></li>
+				<li><a href="board.notice_list.html" class="c_btn h40 color sky">작성완료</a></li>
+			</ul>
+		</div>
+	</div>
+
+
+
+</div><!-- ▲ 여기까지 서브컨텐츠 들어감 -->
+
+
+<?
+include_once("container.footer.html");
+include_once("wrap_footer.html");
+?>

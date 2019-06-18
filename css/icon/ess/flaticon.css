@@ -1,0 +1,251 @@
+/*
+Flaticon icon font:     Flaticon
+Creation date     :     22/06/2016 15:36
+Auth              :     Flaticon Premium Member
+*/
+
+@font-face {
+  font-family: "ess";
+  src: url("./Flaticon.eot");
+  src: url("./Flaticon.eot?#iefix") format("embedded-opentype"),
+       url("./Flaticon.woff") format("woff"),
+       url("./Flaticon.ttf") format("truetype"),
+       url("./Flaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "ess";
+    src: url("./Flaticon.svg#Flaticon") format("svg");
+  }
+}
+
+[class^="ess-"]:before, [class*="ess-"]:before,
+[class^="ess-"]:after, [class*="ess-"]:after {   
+font-family: ess;
+font-size: inherit;
+font-style: normal;
+}
+
+.ess-add-circular-outlined-button:before { content: "\f100"; }
+.ess-add-cross-outlined-symbol:before { content: "\f101"; }
+.ess-add-square-outlined-interface-button:before { content: "\f102"; }
+.ess-airplane-rotated-diagonal-transport-outlined-symbol:before { content: "\f103"; }
+.ess-alarm-clock-symbol:before { content: "\f104"; }
+.ess-arrow-entering-into-square:before { content: "\f105"; }
+.ess-attach-interface-symbol-of-rotated-paperclip:before { content: "\f106"; }
+.ess-attachment:before { content: "\f107"; }
+.ess-audio-tool-in-silence:before { content: "\f108"; }
+.ess-back-left-arrow-circular-button-outline:before { content: "\f109"; }
+.ess-back-left-arrow-square-button-outline:before { content: "\f10a"; }
+.ess-big-map-placeholder-outlined-symbol-of-interface:before { content: "\f10b"; }
+.ess-book-outline:before { content: "\f10c"; }
+.ess-bookmark-outlined-interface-symbol:before { content: "\f10d"; }
+.ess-bottle-gross-outlined-symbol:before { content: "\f10e"; }
+.ess-button-of-nine-outlined-circles:before { content: "\f10f"; }
+.ess-buttons:before { content: "\f110"; }
+.ess-cellphone:before { content: "\f111"; }
+.ess-cellular-phone-outline:before { content: "\f112"; }
+.ess-center-text-interface-symbol-of-lines:before { content: "\f113"; }
+.ess-chat-comment-oval-speech-bubble-with-text-lines:before { content: "\f114"; }
+.ess-chat-oval-speech-bubbles-symbol:before { content: "\f115"; }
+.ess-checkmark-outline:before { content: "\f116"; }
+.ess-checkmark-square-button-outline:before { content: "\f117"; }
+.ess-checkmark-verify-interface-symbol-button:before { content: "\f118"; }
+.ess-circular-arrow-counterclockwise-rotating-symbol:before { content: "\f119"; }
+.ess-circular-graphic-outline:before { content: "\f11a"; }
+.ess-circular-outlined-badge-with-ribbon-recognition-prize-symbol:before { content: "\f11b"; }
+.ess-circular-target-shooting-interface-symbol:before { content: "\f11c"; }
+.ess-clipboard-square-symbol:before { content: "\f11d"; }
+.ess-close-circular-button-symbol:before { content: "\f11e"; }
+.ess-cloud-outlined-shape:before { content: "\f11f"; }
+.ess-cloud-with-hail-falling:before { content: "\f120"; }
+.ess-cocktail-glass-outline:before { content: "\f121"; }
+.ess-code-signs:before { content: "\f122"; }
+.ess-collapse-two-arrows-diagonal-symbol:before { content: "\f123"; }
+.ess-comment-oval-outlined-balloon:before { content: "\f124"; }
+.ess-compass-orientation-symbol:before { content: "\f125"; }
+.ess-contract-two-arrows-symbol-pointing-the-center-of-square-button:before { content: "\f126"; }
+.ess-copy-two-paper-sheets-interface-symbol:before { content: "\f127"; }
+.ess-crescent-moon-phase-outlined-shape:before { content: "\f128"; }
+.ess-cropping-interface-tool-symbol:before { content: "\f129"; }
+.ess-cross-rounded-outline:before { content: "\f12a"; }
+.ess-cross-square-button:before { content: "\f12b"; }
+.ess-cube-of-notes-stack:before { content: "\f12c"; }
+.ess-double-arrow-horizontal-symbol:before { content: "\f12d"; }
+.ess-double-arrow-vertical-symbol:before { content: "\f12e"; }
+.ess-double-right-arrows-angles:before { content: "\f12f"; }
+.ess-down-arrow:before { content: "\f130"; }
+.ess-down-arrow-square-button:before { content: "\f131"; }
+.ess-down-arrow-square-outlined-button:before { content: "\f132"; }
+.ess-down-arrow-to-a-square:before { content: "\f133"; }
+.ess-down-circular-button:before { content: "\f134"; }
+.ess-download-circular-button:before { content: "\f135"; }
+.ess-download-down-arrow-symbol:before { content: "\f136"; }
+.ess-download-from-internet-cloud:before { content: "\f137"; }
+.ess-download-square-button:before { content: "\f138"; }
+.ess-download-square-outlined-interface-button:before { content: "\f139"; }
+.ess-electrical-storm-weather-symbol:before { content: "\f13a"; }
+.ess-electronic-game-machine-outline:before { content: "\f13b"; }
+.ess-email-closed-outlined-back-envelope-interface-symbol:before { content: "\f13c"; }
+.ess-email-square-outlined-interface-symbol-of-envelope-back:before { content: "\f13d"; }
+.ess-equalization:before { content: "\f13e"; }
+.ess-equalizer-interface-square-button-symbol:before { content: "\f13f"; }
+.ess-event-weekly-calendar-symbol:before { content: "\f140"; }
+.ess-expand-square-interface-button-of-two-arrows:before { content: "\f141"; }
+.ess-expanding-two-opposite-arrows-diagonal-symbol-of-interface:before { content: "\f142"; }
+.ess-fast-forward-double-arrow-outline:before { content: "\f143"; }
+.ess-favourites-star-outline-interface-symbol:before { content: "\f144"; }
+.ess-file-rounded-empty-sheet:before { content: "\f145"; }
+.ess-file-rounded-outlined-symbol:before { content: "\f146"; }
+.ess-film-strip-couple-of-photograms:before { content: "\f147"; }
+.ess-flag-outline:before { content: "\f148"; }
+.ess-fog-at-night-weather-symbol:before { content: "\f149"; }
+.ess-foggy-day-fog-at-sunset-or-sunrise:before { content: "\f14a"; }
+.ess-folder-outline:before { content: "\f14b"; }
+.ess-fork:before { content: "\f14c"; }
+.ess-four-rounded-squares-button:before { content: "\f14d"; }
+.ess-full-screen-interface-symbol-of-four-arrows-in-square-button:before { content: "\f14e"; }
+.ess-games-machine-outline:before { content: "\f14f"; }
+.ess-gear-outlined-symbol:before { content: "\f150"; }
+.ess-giftbox-outline:before { content: "\f151"; }
+.ess-graphical-business-presentation-on-a-screen:before { content: "\f152"; }
+.ess-headphones-audio-symbol:before { content: "\f153"; }
+.ess-hot-interface-symbol-of-fire-flames-outline:before { content: "\f154"; }
+.ess-images-square-outlined-interface-button-symbol:before { content: "\f155"; }
+.ess-ink-interface-symbol-of-drop-outline:before { content: "\f156"; }
+.ess-label-outline:before { content: "\f157"; }
+.ess-left-alignment:before { content: "\f158"; }
+.ess-left-arrow-curve-outline:before { content: "\f159"; }
+.ess-left-arrow-in-circle-outline:before { content: "\f15a"; }
+.ess-left-arrow-line-symbol:before { content: "\f15b"; }
+.ess-left-arrow-rounded-outlined-button-interface-symbol:before { content: "\f15c"; }
+.ess-left-arrow-signal-outline:before { content: "\f15d"; }
+.ess-left-arrow-square-outlined-button:before { content: "\f15e"; }
+.ess-left-arrow-with-a-cross:before { content: "\f15f"; }
+.ess-like-heart-outline-symbol:before { content: "\f160"; }
+.ess-link-button:before { content: "\f161"; }
+.ess-list:before { content: "\f162"; }
+.ess-list-interface-symbol:before { content: "\f163"; }
+.ess-lock-circular-padlock-outline-tool-symbol:before { content: "\f164"; }
+.ess-login-arrow-symbol-entering-back-into-a-square:before { content: "\f165"; }
+.ess-login-square-arrow-button-outline:before { content: "\f166"; }
+.ess-map-folded-outlined-paper:before { content: "\f167"; }
+.ess-megaphone-outline-of-amplification-tool:before { content: "\f168"; }
+.ess-men:before { content: "\f169"; }
+.ess-menu-square-button:before { content: "\f16a"; }
+.ess-menu-three-outlined-rounded-lines-symbol:before { content: "\f16b"; }
+.ess-microphone:before { content: "\f16c"; }
+.ess-microphone-outlined-tool:before { content: "\f16d"; }
+.ess-minus-circular-button:before { content: "\f16e"; }
+.ess-minus-in-zoom-symbol:before { content: "\f16f"; }
+.ess-minus-outline:before { content: "\f170"; }
+.ess-minus-square-outlined-button:before { content: "\f171"; }
+.ess-monitor-outline:before { content: "\f172"; }
+.ess-music-note:before { content: "\f173"; }
+.ess-music-rectangular-interface-button-outline:before { content: "\f174"; }
+.ess-music-theme:before { content: "\f175"; }
+.ess-musical-note:before { content: "\f176"; }
+.ess-musical-note-outlined-symbol:before { content: "\f177"; }
+.ess-mute-voice:before { content: "\f178"; }
+.ess-new-email-envelope-frontal-view:before { content: "\f179"; }
+.ess-nine-oclock-on-circular-clock:before { content: "\f17a"; }
+.ess-note-outlined-symbol:before { content: "\f17b"; }
+.ess-notebook-rectangular-symbol-with-spring:before { content: "\f17c"; }
+.ess-notification-bell-outline-interface-symbol:before { content: "\f17d"; }
+.ess-notification-bell-outline-interface-symbol-1:before { content: "\f17e"; }
+.ess-opened-email-outlined-envelope-back-interface-symbol:before { content: "\f17f"; }
+.ess-oval-empty-outlined-speech-bubble:before { content: "\f180"; }
+.ess-paintbrush-outline:before { content: "\f181"; }
+.ess-paper-airplane-outline:before { content: "\f182"; }
+.ess-pause-outlined-big-symbol:before { content: "\f183"; }
+.ess-pencil-big-outlined-vertical-tool-symbol:before { content: "\f184"; }
+.ess-phone-auricular-outline:before { content: "\f185"; }
+.ess-photo-camera-outline:before { content: "\f186"; }
+.ess-pin:before { content: "\f187"; }
+.ess-planetary-grid-symbol:before { content: "\f188"; }
+.ess-play-triangle-outline:before { content: "\f189"; }
+.ess-portfolio-outline:before { content: "\f18a"; }
+.ess-print-interface-button-symbol-of-printer-outline:before { content: "\f18b"; }
+.ess-radio:before { content: "\f18c"; }
+.ess-rain-weather-cloud-outline-symbol-with-raindrops-lines:before { content: "\f18d"; }
+.ess-rectangular-outlined-speech-bubble-symbol:before { content: "\f18e"; }
+.ess-recycling-bin:before { content: "\f18f"; }
+.ess-rewind-double-arrow-outline-multimedia-button-symbol:before { content: "\f190"; }
+.ess-right-arrow-angle:before { content: "\f191"; }
+.ess-right-arrow-circular-button-outline:before { content: "\f192"; }
+.ess-right-arrow-circular-outlined-button:before { content: "\f193"; }
+.ess-right-arrow-on-a-pole-outlined-orientation-signal-symbol:before { content: "\f194"; }
+.ess-right-arrow-outline:before { content: "\f195"; }
+.ess-right-arrow-square-button-symbol:before { content: "\f196"; }
+.ess-right-arrow-square-outlined-button:before { content: "\f197"; }
+.ess-right-arrow-symbol-in-a-square-outline:before { content: "\f198"; }
+.ess-rounded-rectangular-tool-shape:before { content: "\f199"; }
+.ess-sand-clock:before { content: "\f19a"; }
+.ess-save-button-interface-symbol-of-outlined-diskette:before { content: "\f19b"; }
+.ess-search-interface-symbol:before { content: "\f19c"; }
+.ess-search-oval-magnification-tool-or-spoon-interface-symbol:before { content: "\f19d"; }
+.ess-share-social-interface-button:before { content: "\f19e"; }
+.ess-shopping-bag:before { content: "\f19f"; }
+.ess-shopping-basket-e-commerce-symbol:before { content: "\f1a0"; }
+.ess-shopping-cart-outline:before { content: "\f1a1"; }
+.ess-shopping-cart-outline-1:before { content: "\f1a2"; }
+.ess-shuffle:before { content: "\f1a3"; }
+.ess-sort-ascending:before { content: "\f1a4"; }
+.ess-sort-descending:before { content: "\f1a5"; }
+.ess-speaker-musical-amplification-outlined-frontal-tool:before { content: "\f1a6"; }
+.ess-speaker-outline:before { content: "\f1a7"; }
+.ess-speaker-outline-1:before { content: "\f1a8"; }
+.ess-speaker-outline-audio-interface-symbol:before { content: "\f1a9"; }
+.ess-speaker-outlined-square-frontal-tool-audio-tool-symbol:before { content: "\f1aa"; }
+.ess-speech-bubble-oval-symbol-with-three-dots:before { content: "\f1ab"; }
+.ess-square-outline:before { content: "\f1ac"; }
+.ess-square-shape-design-interface-tool-symbol:before { content: "\f1ad"; }
+.ess-square-targeting-interface-symbol:before { content: "\f1ae"; }
+.ess-store-commercial-symbol-outline:before { content: "\f1af"; }
+.ess-sun-day-weather-symbol:before { content: "\f1b0"; }
+.ess-sunrise-or-sunset:before { content: "\f1b1"; }
+.ess-switch-outlined-symbol:before { content: "\f1b2"; }
+.ess-switch-outlined-tool-symbol:before { content: "\f1b3"; }
+.ess-tag-outline:before { content: "\f1b4"; }
+.ess-television-outline:before { content: "\f1b5"; }
+.ess-text-alignment-option-button-interface-symbol:before { content: "\f1b6"; }
+.ess-text-paper-sheet-symbol:before { content: "\f1b7"; }
+.ess-three-vertical-outlined-bars-symbol:before { content: "\f1b8"; }
+.ess-timer-timing-tool:before { content: "\f1b9"; }
+.ess-tool-outline-of-hotel-reception-or-covered-food-tray:before { content: "\f1ba"; }
+.ess-triangle-equilateral-outline-shape-on-horizontal-line:before { content: "\f1bb"; }
+.ess-trophy-outline:before { content: "\f1bc"; }
+.ess-two-arrows:before { content: "\f1bd"; }
+.ess-two-circular-arrows:before { content: "\f1be"; }
+.ess-two-circular-counterclockwise-rotating-arrows-symbol:before { content: "\f1bf"; }
+.ess-two-drops-sizes-outlined-shapes:before { content: "\f1c0"; }
+.ess-two-rounded-equal-squares-outlines-symbol:before { content: "\f1c1"; }
+.ess-unlocked-circular-padlock-outline:before { content: "\f1c2"; }
+.ess-up-arrow-angle:before { content: "\f1c3"; }
+.ess-up-arrow-circular-button:before { content: "\f1c4"; }
+.ess-up-arrow-in-square-interface-button:before { content: "\f1c5"; }
+.ess-up-arrow-into-square:before { content: "\f1c6"; }
+.ess-up-arrow-or-flag-shape-big-gross-outlined-symbol:before { content: "\f1c7"; }
+.ess-up-arrow-square-button:before { content: "\f1c8"; }
+.ess-up-arrow-square-button-outline:before { content: "\f1c9"; }
+.ess-up-arrow-with-house-shape-outlined-symbol:before { content: "\f1ca"; }
+.ess-up-circular-interface-button:before { content: "\f1cb"; }
+.ess-up-square-button-outline:before { content: "\f1cc"; }
+.ess-upload:before { content: "\f1cd"; }
+.ess-upload-to-the-cloud:before { content: "\f1ce"; }
+.ess-upper-right-arrow-square-button-outlined-symbol:before { content: "\f1cf"; }
+.ess-user-info-interface-symbol-with-text-lines-at-right-side:before { content: "\f1d0"; }
+.ess-user-outline-male-symbol-of-interface:before { content: "\f1d1"; }
+.ess-video-camera-outline:before { content: "\f1d2"; }
+.ess-wallet-outline:before { content: "\f1d3"; }
+.ess-weather-interface-symbol-of-a-semicircle-on-three-lines-perspective:before { content: "\f1d4"; }
+.ess-weekly-calendar:before { content: "\f1d5"; }
+.ess-weekly-calendar-outline-event-interface-symbol:before { content: "\f1d6"; }
+.ess-wind-socket-outlined-symbol:before { content: "\f1d7"; }
+.ess-window-outline:before { content: "\f1d8"; }
+.ess-winds-lines-weather-symbol:before { content: "\f1d9"; }
+.ess-wrench-outline:before { content: "\f1da"; }
+.ess-zoom-increasing-symbol:before { content: "\f1db"; }

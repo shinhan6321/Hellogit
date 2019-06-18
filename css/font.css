@@ -1,0 +1,67 @@
+@charset 'utf-8';
+
+
+/* **************************************** *
+   Noto 폰트
+ * **************************************** */
+
+@font-face {
+    font-family: "Noto";
+	font-weight: 100;
+    font-style: normal;
+    src: url('webfont/NotoSansCJKkr-Thin.woff.eot');
+    src: url('webfont/NotoSansCJKkr-Thin.woff.eot?#iefix') format('embedded-opentype'),
+	url('webfont/NotoSansCJKkr-Thin.woff2') format('woff2'),
+	url('webfont/NotoSansCJKkr-Thin.woff') format('woff');
+}
+
+@font-face {
+    font-family: "Noto";
+	font-weight: 300;
+    font-style: normal;
+    src: url('webfont/NotoSansCJKkr-Light.woff.eot');
+    src: url('webfont/NotoSansCJKkr-Light.woff.eot?#iefix') format('embedded-opentype'),
+	url('webfont/NotoSansCJKkr-Light.woff2') format('woff2'),
+	url('webfont/NotoSansCJKkr-Light.woff') format('woff');
+}
+
+@font-face {
+    font-family: "Noto";
+	font-weight: 400;
+	font-style: normal;
+    src: url('webfont/NotoSansCJKkr-Regular.woff.eot');
+    src: url('webfont/NotoSansCJKkr-Regular.woff.eot?#iefix') format('embedded-opentype'),
+	url('webfont/NotoSansCJKkr-Regular.woff2') format('woff2'),
+	url('webfont/NotoSansCJKkr-Regular.woff') format('woff'),
+	url('webfont/NotoSansCJKkr-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "Noto";
+	font-weight: 500;
+    font-style: normal;
+    src: url('webfont/NotoSansCJKkr-Medium.woff.eot');
+    src: url('webfont/NotoSansCJKkr-Medium.woff.eot?#iefix') format('embedded-opentype'),
+	url('webfont/NotoSansCJKkr-Medium.woff2') format('woff2'),
+	url('webfont/NotoSansCJKkr-Medium.woff') format('woff');
+}
+
+@font-face {
+    font-family: "Noto";
+	font-weight: 600;
+    font-style: normal;
+    src: url('webfont/NotoSansCJKkr-Bold.woff.eot');
+    src: url('webfont/NotoSansCJKkr-Bold.woff.eot?#iefix') format('embedded-opentype'),
+	url('webfont/NotoSansCJKkr-Bold.woff2') format('woff2'),
+	url('webfont/NotoSansCJKkr-Bold.woff') format('woff');
+}
+
+@font-face {
+    font-family: "Noto";
+	font-weight: 700;
+    font-style: normal;
+    src: url('webfont/NotoSansCJKkr-black.woff.eot');
+    src: url('webfont/NotoSansCJKkr-black.woff.eot?#iefix') format('embedded-opentype'),
+	url('webfont/NotoSansCJKkr-black.woff2') format('woff2'),
+	url('webfont/NotoSansCJKkr-black.woff') format('woff');
+}

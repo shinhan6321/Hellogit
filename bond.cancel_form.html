@@ -1,0 +1,222 @@
+<?
+include_once("inc_header.html");
+include_once("wrap_header2.html");
+include_once("bond.header.html");
+?>
+
+
+
+
+
+<!-- ******************************************
+  ◆ LEFT MENU
+  -- ****************************************** -->
+<div class="side">
+
+	<!-- 2차메뉴 -->
+	<div class="menu"><!-- 메뉴가 4개를 초과할때 if_more 클래스 -->
+		<ul>
+			<!-- 해당메뉴 hit 클래스 추가 -->
+			<li><a href="bond.apply_form.html" class="ctg2">채권매입신청</a></li>
+			<li><a href="bond.change_form.html" class="ctg2">채권변경신청</a></li>
+			<li class="hit"><a href="bond.cancel_form.html" class="ctg2">채권취소신청</a></li>
+			<li><a href="bond.repay_form.html" class="ctg2">채권중도상환신청</a></li>
+		</ul>
+	</div>
+	<!-- / 2차메뉴 -->
+
+	<!-- 고객센터 정보 -->
+	<div class="cs_info">
+		<div class="cs_tit"><span class="tx">법무채권 상담센터</span></div>
+		<dl>
+			<dt><strong class="tel_pc">1544-3440</strong><a href="tel:1544-3440" class="tel_mo">1544-3440</a></dt>
+			<dd>FAX : 02-6442-6412</dd>
+			<dd>E-mail : help@bmbond.co.kr</dd>
+			<dd class="open_time">09:30 ~ 18:00 (주말/공휴일 휴무)</dd>
+		</dl>
+	</div>
+	<!-- / 고객센터 정보 -->
+
+</div>
+<!-- / LEFT MENU -->
+
+
+
+
+<div class="section"><!-- ▼ 여기서부터 서브컨텐츠 들어감 -->
+
+
+
+	<!-- ******************************************
+	  ◆ SUB TOP
+	  -- ****************************************** -->
+	<div class="sub_top">
+
+		<!-- 2차 타이틀 -->
+		<div class="page_tit"><strong>채권취소신청</strong></div>
+
+		<!-- 페이지 위치 -->
+		<div class="location">
+			<ul>
+				<li class="home"><a href="" class="btn">홈</a><i class="icons arrow-next-10"></i></li>
+				<li><span class="btn">채권매입업무</span><i class="icons arrow-next-10"></i></li>
+				<li><span class="btn">채권취소신청</span><i class="icons arrow-next-10"></i></li>
+			</ul>
+		</div>
+		<!-- / 페이지 위치 -->
+
+		<!-- 모바일 메뉴 -->
+		<div class="menu js_menu_stage ">
+			<a href="#none" class="btn_open js_menu_btn" onclick="return false;" ><span class="shape"></span></a>
+			<div class="menu_box">
+				<ul>
+					<!-- 해당메뉴 hit 클래스 추가 -->
+					<li><a href="bond.apply_form.html" class="ctg2">채권매입신청</a></li>
+					<li><a href="bond.change_form.html" class="ctg2">채권변경신청</a></li>
+					<li class="hit"><a href="bond.cancel_form.html" class="ctg2">채권취소신청</a></li>
+					<li><a href="bond.repay_form.html" class="ctg2">채권중도상환신청</a></li>
+				</ul>
+			</div>
+		</div>
+		<script>
+			// 메뉴 열림
+			$(document).on('click','.js_menu_btn',function(){
+				var targetClass = '.js_menu_stage';
+				var addClassName = 'if_open_menu';
+				var chk = $(targetClass).hasClass(addClassName);
+				if( chk == false){ $(targetClass).addClass(addClassName); }
+				else {  $(targetClass).removeClass(addClassName);  }
+			});
+		</script>
+		<!-- / 모바일 메뉴 -->
+
+
+		<!-- 페이지 프로세스 -->
+		<div class="page_process">
+			<ul>
+				<li class="hit"><!-- 해당페이지 hit추가 -->
+					<div class="in_box">
+						<dl>
+							<dt>STEP 1</dt>
+							<dd>채권등록번호 입력</dd>
+						</dl>
+					</div>
+				</li>
+				<li class="">
+					<div class="in_box">
+						<dl>
+							<dt>STEP 2</dt>
+							<dd>취소채권 내용 확인</dd>
+						</dl>
+					</div>
+				</li>
+				<li class="">
+					<div class="in_box">
+						<dl>
+							<dt>STEP 3</dt>
+							<dd>취소 신청 완료</dd>
+						</dl>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<!-- / 페이지 프로세스 -->
+
+	</div>
+	<!-- SUB TOP -->
+
+
+
+	<!-- ******************************************
+	  ◆ 채권/인지목록
+	  -- ****************************************** -->
+
+
+	<!-- 폼(공통) -->
+	<div class="c_form">
+
+		<!-- 단락폼 (타이틀+폼) -->
+		<div class="form_box">
+			<!-- 단락타이틀 -->
+			<div class="group_tit">
+				<dl>
+					<dt>채권등록번호 입력</dt>
+					<dd>※ 다음 정보를 정확하게 입력해주세요.</dd>
+				</dl>
+			</div>
+			<!-- 폼테이블 필독 ::
+				 * 중요! 툴팁노출을 위해 "input_box"의 인풋"design"과 "tooltip" 순서변경하지말고 그 사이에 소스 절대없도록
+				 * 필수 선택되면 자동노출됨 (css로 제어)
+				 * 필수요소에 ess (dt/dd 모두적용)
+				 * 반응형 특수 구조로, ul.tr 안에 li.td 가 2개가 연속 될 때 컨텐츠 차이가 나지 않도록 배열할것.
+				 * 반응형을 위한 구조이므로 반드시 지켜주세요.
+			  -->
+			<div class="like_table">
+				<ul class="tr">
+					<li class="td">
+						<dl class="inner">
+							<dt class="ess"><span class="opt">채권등록번호</span></dt>
+							<dd class="ess">
+								<div class="box_etc">
+									<ul>
+										<li>
+											<div class="input_box" style="width:300px; max-width:300px">
+												<input type="number" name="" value="" class="design" placeholder="채권등록번호" /><span class="tooltip">필수</span>
+											</div>
+										</li>
+										<li style="width:60px"><a href="#none" class="c_btn h35 color dark">등록</a></li>
+									</ul>
+								</div>
+							</dd>
+						</dl>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+	</div>
+	<!-- / 폼(공통) -->
+
+
+
+	<!-- 하단버튼 (공통) -->
+	<div class="c_btn_box">
+		<div class="in">
+			<ul>
+				<li><a href="#none" class="c_btn h50 color sky">확인</a></li>
+			</ul>
+		</div>
+	</div>
+
+
+
+
+	<!-- 페이지 도움말(공통) -->
+	<div class="page_tip">
+		<dl>
+			<dt>관련 안내사항</dt>
+			<dd>
+				<ul>
+					<li>관련 안내 사항을 기재해주세요.</li>
+					<li>관련 안내 사항을 기재해주세요.</li>
+					<li class="no_bullet">
+						<a href="#none" class="c_btn h30 color light">위임장양식(우리은행) 다운로드</a>
+						<a href="#none" class="c_btn h30 color light">위임장양식(신한은행) 다운로드</a>
+					</li>
+				</ul>
+			</dd>
+		</dl>
+	</div>
+	<!-- / 페이지 도움말(공통) -->
+
+
+
+
+
+</div><!-- ▲ 여기까지 서브컨텐츠 들어감 -->
+
+
+<?
+include_once("container.footer.html");
+include_once("wrap_footer.html");
+?>
